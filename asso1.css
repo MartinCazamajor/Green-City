@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+}
+article{
+    height:200px;
+    width:200px;
+    display:flex;
+    justify-content: space-around;
+}
+#associations{
+    display:flex;
+}
