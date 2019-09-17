@@ -133,10 +133,6 @@ a {
 
 
 /* =============== CSS CONTACT ============ */
-* {
-  box-sizing: border-box;
-}
-
 
 h3 {
     text-align: center;
@@ -199,7 +195,8 @@ footer{
 /* ================ CSS MEDIA ================ */
 
 @media screen and (min-width: 640px) {
-  .label{
+  /*========== CONTACT ===============*/
+    .label{
     display: inline-block;
     width: 15%;
     margin-top: 6px;
@@ -217,6 +214,18 @@ footer{
 
     cursor: pointer;       
     }
+
+    /*================== ACTIONS================*/
+    #actions {
+    display: flex;
+    justify-content: space-around;
+    }
+    #actions img{
+        height: 150px;
+        width: 200px;
+    }
+}
+ 
 /*      CSS ACTIONS         */
 
 #actions{
@@ -230,18 +239,6 @@ footer{
 }
 h1{
     text-align: center;
-}
-
-@media screen and (min-width:640px){
-    #actions {
-       display: flex;
-       justify-content: space-around;
-    }
-    #actions img{
-        height: 150px;
-        width: 200px;
-    }
-
 }
 
 /*      CSS ASSOCIATIONS         */
