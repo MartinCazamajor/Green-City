@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.material-icons {
+  font-size: 24px;
+  margin-right: 12px;
+  vertical-align: text-bottom;
+}
+
+.menu {
+  background: #3f51b5;
+  color: #fff;
+  height: 50px;
+  position: relative;
+}
+
+.menu .title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+.menu nav {
+  background: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: height .2s;
+}
+
+.menu nav > * {
+  display: block;
+  letter-spacing: 1px;
+  line-height: 2.5;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.menu nav input {
+  background: rgba(0,0,0,.2);
+  border: none;
+  color: #fff;
+}
+
+.menu .burger {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: 'Material Icons';
+  font-size: 30px;
+  line-height: 50px;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 10px;
+  width: auto;
+}
+
+.menu .burger:before {
+  content: url('./burgermenu.png')
+}
+
+.menu .burger:checked:before {
+  content: 'close';
+}
+
+.menu .burger:checked + nav {
+  height: calc(100vh - 50px);
+}
+
+@media screen and only(min-width: 640px) {
+    .navbar {
+
+    }
+}
+
+/*A mettre une seule fois en haut de la page pour s'assurer de bien toucher les bords des écrans*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /*Dimmensionnement des images*/
+.poubelle, .carte{
+    height: 200px;
+    width: 200px;
+    margin: 2Opx;
+}
+
+/*classe gérant l'intagrélité de la section gestion des déchets*/
+.gestion {
+    background-color: lightgreen;
+}
+
+/*Premier article*/
+.conseil, .collecte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gestion h2{
+    text-align: center;
+    padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  h3 {
+      text-align: center;
+  }
+  
+  
+  input[type=text], input[type=email],select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #6F6F6F;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    
+  }
+  
+  input[type=submit]:hover {
+    background-color: #626161;
+  }
+  
+  .contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: -8px;
+  }
+  
+  .label {
+    margin-top: 6px;
+    
+    
+  }
+  
+  .formulaire {
+    margin-top: 6px;
+  }
+  
+@media screen and (min-width: 640px) {
+    .label{
+        display: inline-block;
+        width: 15%;
+        margin-top: 6px;
+        text-align: end;
+    }
+    .formulaire{
+        display: inline-flex;
+        width: 75%;
+        margin-top: 6px;
+    }
+    input[type=submit]{
+    margin: auto;
+    width: 30%;
+    display: block;
+    cursor: pointer;        
+    }
+}
