@@ -114,7 +114,6 @@ a {
 .poubelle {
     height: 200px;
     width: 200px;
-    margin: 2Opx;
     border-radius: 10%;
 }
 
@@ -131,9 +130,17 @@ a {
     align-items: center;
 }
 
+.conseil h3, .conseil p{
+    margin: 15px;
+}
+
 .gestion h2{
     text-align: center;
     padding: 20px;
+}
+
+.map *{
+    margin: 15px;
 }
 /*------------------------------FIN SECTION GESTION DECHETS*/
 
