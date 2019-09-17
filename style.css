@@ -8,6 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+/* ------------------------DEBUT DE LA SECTION HEADER & BANNER */
 a {
   color: #fff;
   text-decoration: none;
@@ -89,6 +90,17 @@ a {
   width: auto;
   margin-left: 70%;
 }
+
+.banner {
+  display: block;
+  width: auto;
+}
+
+.banner img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 
 /*------------------------------DEBUT SECTION GESTION DECHETS*/
 /*Dimmensionnement des images*/
@@ -235,7 +247,8 @@ footer{
 }
 
 #actions img{
-    height: 10%;
+    height: 150px;
+    width: 200px;
 }
 h1{
     text-align: center;
