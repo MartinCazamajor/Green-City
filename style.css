@@ -1,3 +1,11 @@
+
+/*A mettre une seule fois en haut de la page pour s'assurer de bien toucher les bords des écrans*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 a {
@@ -70,7 +78,7 @@ a {
 }
 
 .menu .burger:before {
-  content: url('./burgermenu.png')
+  content: url('./img/burgermenu.png')
 }
 
 .menu .burger:checked:before {
@@ -86,13 +94,6 @@ a {
 
     }
 }
-
-/*A mettre une seule fois en haut de la page pour s'assurer de bien toucher les bords des écrans*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 
   /*Dimmensionnement des images*/
 .poubelle, .carte{
