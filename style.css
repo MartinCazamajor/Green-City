@@ -112,21 +112,21 @@ a {
     margin: 2Opx;
 }
 
-/*classe gérant l'intagrélité de la section gestion des déchets*/
+/*classe gérant l'intégralité de la section gestion des déchets*/
 .gestion {
-    background-color: lightgreen;
+    background-color: lightgreen;;
 }
 
-/*Premier article*/
+.gestion h3, .gestion img{
+    margin: 20px;
+}
+
+/*articles*/
 .conseil, .collecte {
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.collecte li{
-    padding: 10px;
 }
 
 .gestion h2{
@@ -247,9 +247,21 @@ footer a{
     }
 
     /*=============== GESTION DES DECHETS=================*/
-    .conseil{
+    .conseil, .collecte{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .conseil h3, .collecte h3{
+        width: 100%;
+    }
+    .conseil p, .collecte ul{
+        width: 50%;
+    }
+
+    .collecte img{
+        order: 2;
     }
 }
  
