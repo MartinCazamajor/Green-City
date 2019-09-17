@@ -347,7 +347,8 @@ footer img{
     .map {
         display: flex;
         flex-direction: row-reverse;
-        align-items: center; 
+        align-items: center;
+        justify-content: space-around; 
     }
 
  
