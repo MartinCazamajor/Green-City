@@ -78,7 +78,7 @@ a {
 }
 
 .menu .burger:before {
-  content: url('./burgermenu.png')
+  content: url('./img/burgermenu.png')
 }
 
 .menu .burger:checked:before {
