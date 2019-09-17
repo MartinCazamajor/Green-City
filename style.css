@@ -89,13 +89,7 @@ a {
   height: calc(100vh - 50px);
 }
 
-@media screen and only(min-width: 640px) {
-    .navbar {
-
-    }
-}
-
-  /*Dimmensionnement des images*/
+/*Dimmensionnement des images*/
 .poubelle, .carte{
     height: 200px;
     width: 200px;
