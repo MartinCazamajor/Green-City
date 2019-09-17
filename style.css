@@ -138,6 +138,21 @@ a {
 }
 /*------------------------------FIN SECTION GESTION DECHETS*/
 
+/*=================ACTIONS====================*/
+#actions{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#actions img{
+  height: 150px;
+  width: 200px;
+
+}
+h1{
+  text-align: center;
+}
 
 
 /* =============== CSS CONTACT ============ */
@@ -280,8 +295,7 @@ footer img{
     justify-content: space-between;
     }
 
-    cursor: pointer;           
-  } 
+   
 
   .container{
     margin: -10px;
@@ -292,7 +306,7 @@ footer img{
   footer img:hover{
     opacity: 1;
   }
-}
+
 
 
     /*================== ACTIONS================*/
@@ -323,24 +337,8 @@ footer img{
     .collecte img{
         order: 2;
     }
-}
+
  
-/*      CSS ACTIONS         */
-
-#actions{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-#actions img{
-    height: 150px;
-    width: 200px;
-}
-h1{
-    text-align: center;
-}
-
 /*      CSS ASSOCIATIONS         */
 #associations{
     display:flex;
@@ -357,4 +355,5 @@ h1{
 }
 #associations p, ul,li{
     margin:10px;
+}
 }
