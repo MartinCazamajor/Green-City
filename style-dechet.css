@@ -1,4 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 .poubelle, .carte{
-    height: 5OOpx;
-    width: 500px;
+    height: 200px;
+    width: 200px;
+    margin: 2Opx;
+}
+
+.gestion {
+    background-color: lightgreen;
+}
+
+.conseil {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.gestion h2{
+    text-align: center;
+    padding: 20px;
 }
