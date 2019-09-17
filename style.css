@@ -273,16 +273,12 @@ footer img{
     margin: 6px auto;
     width: 30%;
     display: block;
-
     cursor: pointer;       
     } 
   footer{
     justify-content: space-between;
     }
-
-    cursor: pointer;           
-  } 
-
+          
   .container{
     margin: -10px;
   }
