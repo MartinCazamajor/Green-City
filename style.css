@@ -105,15 +105,6 @@ a {
 
 
 /*------------------------------DEBUT SECTION GESTION DECHETS*/
-/*Dimmensionnement des images*/
-
-/*A mettre une seule fois en haut de la page pour s'assurer de bien toucher les bords des écrans*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   /*Dimmensionnement des images*/
 .poubelle, .carte{
     height: 200px;
@@ -128,14 +119,14 @@ a {
 
 /*Premier article*/
 .conseil, .collecte {
-    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .collecte li{
-    margin: 10px;
+    padding: 10px;
 }
 
 .gestion h2{
@@ -147,11 +138,8 @@ a {
 
 
 /* =============== CSS CONTACT ============ */
-* {
-  box-sizing: border-box;
-}
 
-.contact {
+h3 {
     text-align: center;
 }
 
@@ -226,7 +214,8 @@ footer a{
 /* ================ CSS MEDIA ================ */
 
 @media screen and (min-width: 640px) {
-  .label{
+  /*========== CONTACT ===============*/
+    .label{
     display: inline-block;
     width: 15%;
     margin-top: 6px;
@@ -246,14 +235,24 @@ footer a{
   footer{
     justify-content: space-between;
     }
-  .footer_reseaux{
-    float: right;
-  }
-  .footer_lien{
-    float: left;
-  }
-}
 
+    /*================== ACTIONS================*/
+    #actions {
+    display: flex;
+    justify-content: space-around;
+    }
+    #actions img{
+        height: 150px;
+        width: 200px;
+    }
+
+    /*=============== GESTION DES DECHETS=================*/
+    .conseil{
+        display: flex;
+        flex-direction: row;
+    }
+}
+ 
 /*      CSS ACTIONS         */
 
 #actions{
@@ -268,19 +267,6 @@ footer a{
 }
 h1{
     text-align: center;
-}
-
-@media screen and (min-width:640px){
-    #actions, #associations {
-       display: flex;
-       flex-direction: row;
-       justify-content: space-around;
-    }
-    #actions img, #associations img{
-        height: 150px;
-        width: 200px;
-    }
-
 }
 
 /*      CSS ASSOCIATIONS         */
