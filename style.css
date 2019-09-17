@@ -20,7 +20,7 @@ a {
 
 /* Apparence de la navbar du header */
 .menu {
-  background: #3f51b5;
+  background: #3fa46a;
   color: #fff;
   height: 50px;
   position: fixed; /* Met la navbar en position fixed */
@@ -69,7 +69,7 @@ a {
   -webkit-appearance: none;
   font-size: 20px;
   line-height: 50px;
-  margin: 0;
+  margin: 10px 0px;
   outline: 0;
   padding: 0;
   position: absolute;
@@ -81,7 +81,7 @@ a {
 
 /* Image à afficher pour ouvrir le menu */
 .menu .burger:before {
-  content: url('./img/burgermenu.png')
+  content: url('./img/menu.png');
 }
 
 /* Image à afficher une fois le menu ouvert */
@@ -227,6 +227,7 @@ footer a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: auto;
   }
 
   .menu .title {
@@ -241,6 +242,22 @@ footer a{
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
+  }
+
+  .hover_style {
+    transition: 0.3s ease;
+    background: #3fa46a;
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    border-top: 4px solid #3fa46a;
+    border-bottom: 4px solid #3fa46a;
+  }
+
+  .hover_style:hover {
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    padding: 6px 0; 
   }
 
 
