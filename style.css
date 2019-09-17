@@ -13,12 +13,7 @@ a {
   text-decoration: none;
 }
 
-.material-icons {
-  font-size: 24px;
-  margin-right: 12px;
-  vertical-align: text-bottom;
-}
-
+/* Apparence de la navbar du header */
 .menu {
   background: #3f51b5;
   color: #fff;
@@ -26,6 +21,7 @@ a {
   position: relative;
 }
 
+/* Apparence du titre de la navbar */
 .menu .title {
   font-size: 30px;
   font-weight: bold;
@@ -34,6 +30,7 @@ a {
   text-transform: uppercase;
 }
 
+/* Apparence de l'intérieur du menu une fois ouvert */
 .menu nav {
   background: inherit;
   font-size: 20px;
@@ -50,6 +47,7 @@ a {
   line-height: 2.5;
   padding: 0 20px;
   width: 100%;
+  text-align: start;
 }
 
 .menu nav input {
@@ -58,42 +56,49 @@ a {
   color: #fff;
 }
 
+/* Apparence du texte à l'intérieur du menu */
 .menu .burger {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  color: inherit;
-  cursor: pointer;
-  font-family: 'Material Icons';
   font-size: 30px;
   line-height: 50px;
   margin: 0;
   outline: 0;
   padding: 0;
   position: absolute;
-  text-align: center;
+  text-align: left;
   top: 0;
   right: 10px;
   width: auto;
 }
 
+/* Image à afficher pour ouvrir le menu */
 .menu .burger:before {
   content: url('./img/burgermenu.png')
 }
 
+/* Image à afficher une fois le menu ouvert */
 .menu .burger:checked:before {
-  content: 'close';
+  content: url('./img/close.png');
 }
 
+/* Gestion de la taille du menu une fois ouvert */
 .menu .burger:checked + nav {
-  height: calc(100vh - 50px);
+  height: auto;
+  width: auto;
+  margin-left: 70%;
 }
 
-@media screen and only(min-width: 640px) {
-    .navbar {
+/*------------------------------DEBUT SECTION GESTION DECHETS*/
+/*Dimmensionnement des images*/
 
-    }
-}
+/*A mettre une seule fois en haut de la page pour s'assurer de bien toucher les bords des écrans*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
   /*Dimmensionnement des images*/
 .poubelle, .carte{
@@ -109,87 +114,107 @@ a {
 
 /*Premier article*/
 .conseil, .collecte {
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.collecte li{
+    margin: 10px;
 }
 
 .gestion h2{
     text-align: center;
     padding: 20px;
 }
+/*------------------------------FIN SECTION GESTION DECHETS*/
 
+
+
+/* =============== CSS CONTACT ============ */
 * {
-    box-sizing: border-box;
-  }
-  
-  
-  h3 {
-      text-align: center;
-  }
-  
-  
-  input[type=text], input[type=email],select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-  
-  input[type=submit] {
-    background-color: #6F6F6F;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+h3 {
     text-align: center;
-    width: 100%;
-    
-  }
+}
+
+
+input[type=text], input[type=email],select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  margin-top: 6px;
   
-  input[type=submit]:hover {
-    background-color: #626161;
-  }
+}
+
+.label{
+  text-align: center;
+}
+input[type=submit] {
+  background-color: #6F6F6F;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
   
-  .contact {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    margin: -8px;
-  }
-  
-  .label {
-    margin-top: 6px;
-    
-    
-  }
-  
-  .formulaire {
-    margin-top: 6px;
-  }
-  
+}
+
+input[type=submit]:hover {
+  background-color: #626161;
+}
+
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: -8px;
+}
+
+.formulaire {
+  margin-top: 6px;
+}
+
+
+
+/* ================ CSS FOOTER =============== */
+
+footer{
+  background-color: #6F6F6F;
+}
+
+
+/* ================ CSS MEDIA ================ */
+
 @media screen and (min-width: 640px) {
-    .label{
-        display: inline-block;
-        width: 15%;
-        margin-top: 6px;
-        text-align: end;
-    }
-    .formulaire{
-        display: inline-flex;
-        width: 75%;
-        margin-top: 6px;
-    }
-    input[type=submit]{
+  .label{
+    display: inline-block;
+    width: 15%;
+    margin-top: 6px;
+    text-align: end;
+  }
+  .formulaire{
+    display: inline-flex;
+    width: 75%;
+    margin-top: 6px;
+  }
+  input[type=submit]{
     margin: auto;
     width: 30%;
     display: block;
+
     cursor: pointer;       
     }
 }
@@ -210,13 +235,32 @@ h1{
 }
 
 @media screen and (min-width:640px){
-    #actions {
+    #actions, #associations {
        display: flex;
        flex-direction: row;
        justify-content: space-around;
     }
-    #actions img{
+    #actions img, #associations img{
         height: 150px;
         width: 200px;
     }
+
+}
+
+/*      CSS ASSOCIATIONS         */
+#associations{
+    display:flex;
+}
+#associations article{
+    height:200px;
+    width:200px;
+    display:flex;
+}
+
+#associations h1{
+    display:flex;
+    justify-content: center;
+}
+#associations p, ul,li{
+    margin:10px;
 }
