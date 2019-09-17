@@ -386,7 +386,10 @@ footer img{
   footer img:hover{
     opacity: 1;
   }
-  
+  .lien{
+    display: flex;
+    flex-direction: row;
+  }
 
 
     /*================== ACTIONS================*/
