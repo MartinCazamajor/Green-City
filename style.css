@@ -217,6 +217,7 @@ footer{
 
     cursor: pointer;       
     }
+}
 /*      CSS ACTIONS         */
 
 #actions{
@@ -226,18 +227,20 @@ footer{
 }
 
 #actions img{
-    height: 10%;
+    height: 150px;
+    width: 200px;
 }
 h1{
     text-align: center;
 }
 
 @media screen and (min-width:640px){
-    #actions {
+    #actions, #associations {
        display: flex;
+       flex-direction: row;
        justify-content: space-around;
     }
-    #actions img{
+    #actions img, #associations img{
         height: 150px;
         width: 200px;
     }
