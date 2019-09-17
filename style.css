@@ -192,6 +192,7 @@ a {
     display: block;
     cursor: pointer;       
     }
+}
 /*      CSS ACTIONS         */
 
 #actions{
@@ -201,7 +202,8 @@ a {
 }
 
 #actions img{
-    height: 10%;
+    height: 150px;
+    width: 200px;
 }
 h1{
     text-align: center;
@@ -210,6 +212,7 @@ h1{
 @media screen and (min-width:640px){
     #actions {
        display: flex;
+       flex-direction: row;
        justify-content: space-around;
     }
     #actions img{
