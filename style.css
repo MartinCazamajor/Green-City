@@ -234,7 +234,13 @@ input[type=submit]:hover {
     color:var(--green);
 }
 
-
+.association .info-asso{
+    background: var(--green);
+    color:var(--white);
+}
+.association .info-asso, .association .description-asso{
+    padding:20px;
+}
 
 /* ================ CSS FOOTER =============== */
 
