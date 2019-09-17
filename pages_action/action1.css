@@ -5,20 +5,64 @@
 }
 
 .nom_img img{
-    height: 20%;
-    width: 20%;
+    height: 40%;
+    width: 40%;
+    margin: 20px;
 }
 
 .nom_img{
     text-align: center ;
 }
-
+.nom_img h1{
+    margin-top: 40px;
+    font-size: 40px;
+}
 .information div{
-    display: flex;
+    margin: 0 50px;
+}
+.information div p{
+    text-align: justify;
+    padding: 15px;
+ }
+.information h3{
+    padding: 35px;
+    font-size: 25px;
+}
+
+.description h3{
+    padding: 10px 35px;
+    font-size: 25px;
+}
+
+.description p{
+    text-align: justify;
+    padding: 15px;
+    margin: 0 50px;
+}
+.information img{
+    display: none;
 }
 
 
 
 @media screen and (min-width:640px){
-
+    .information h3{
+        text-align: center;
+    }
+    .description h3{
+        text-align: center;
+    }
+    .nom_img img {
+        display: none;
+    }
+    
+    .information div{
+        display: flex;
+    }
+    .information img{
+        display: block;
+        height: 40%;
+        width: 40%;
+        padding: 15px;
+    }
 }
