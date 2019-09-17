@@ -424,6 +424,7 @@ footer img{
         align-items: center; 
     }
 
+    /*=============== ASSOCIATIONS =================*/
     #associations .group-asso{
         flex-direction: row;
     }
