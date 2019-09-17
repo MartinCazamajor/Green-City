@@ -23,6 +23,9 @@
     flex-direction: column;
     align-items: center;
 }
+.collecte li{
+    text-align: center;
+}
 
 .gestion h2{
     text-align: center;
