@@ -243,3 +243,21 @@ h1{
     }
 
 }
+
+/*      CSS ASSOCIATIONS         */
+#associations{
+    display:flex;
+}
+#associations article{
+    height:200px;
+    width:200px;
+    display:flex;
+}
+
+#associations h1{
+    display:flex;
+    justify-content: center;
+}
+#associations p, ul,li{
+    margin:10px;
+}
