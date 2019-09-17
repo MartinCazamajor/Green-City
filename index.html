@@ -1,15 +1,86 @@
 <!DOCTYPE html>
 <html>
+    <head>
+            <meta charset="utf-8">
+            <title>Green-City</title>
+            <link rel="stylesheet" href="style.css">
+    </head>
+
     <header>
-
+        <div class="navbar">
+            <a href=".">
+                <img src="logo.png" alt="Green-City Logo"/>
+            </a>
+            <input class="burger" type="checkbox">
+        </div>
+        <div class="banner">
+            <img src="banner.png" alt="Green-City banner">
+        </div>
     </header>
-
     
     <body>
+
         <section id="associations">
             <article><a href="asso1.html">Association 1</a></article>
             <article><a href="asso2.html">Association 2</a></article>
             <article><a href="asso3.html">Association 3</a></article>
         </section>
+
+        <section class="gestion">
+            <h2>Gestion des déchets</h2>
+    
+            <article class="conseil">
+                <h3>Conseils</h3>
+                <img src="img/gary-chan-YzSZN3qvHeo-unsplash.jpg" alt="petit bonhomme qui utilise une poubelle" class="poubelle">
+                <p>Ultima Syriarum est Palaestina per intervalla magna protenta, cultis abundans terris et nitidis et civitates habens quasdam egregias, nullam nulli cedentem sed sibi vicissim velut ad perpendiculum aemulas: Caesaream, quam ad honorem Octaviani principis exaedificavit Herodes, et Eleutheropolim et Neapolim itidemque Ascalonem Gazam aevo superiore exstructas.</p>
+            </article>
+    
+            <article class="collecte">
+                <h3>Points de collecte</h3>
+                <img src="img/janis-oppliger-dRHE-XF7wls-unsplash.jpg" alt="carte des points de collecte" class="carte">
+                <p>Ultima Syriarum est Palaestina per intervalla magna protenta</p>
+                <ul>
+                    <li>Ultima Syriarum est Palaestina per intervalla magna protenta</li>
+                    <li>Ultima Syriarum est Palaestina per intervalla magna protenta</li>
+                    <li>Ultima Syriarum est Palaestina per intervalla magna protenta</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="contact">
+            <h3>Contact</h3>
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="ligne">
+                        <div class="label">
+                            <label for="fname">Nom</label>
+                        </div>
+                        <div class="formulaire">
+                            <input type="text" id="fname" name="firstname" placeholder="Votre nom..">
+                        </div>
+                    </div>
+                    <div class="ligne">
+                        <div class="label">
+                            <label for="lname">Email</label>
+                        </div>
+                        <div class="formulaire">
+                            <input type="email" id="lname" name="lastname" placeholder="Votre email..">
+                        </div>
+                    </div>            
+                    <div class="ligne">
+                        <div class="label">
+                            <label for="subject">Message</label>
+                        </div>
+                        <div class="formulaire">
+                            <textarea id="subject" name="subject" placeholder="Votre message.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="ligne">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </div>
+        </section>
+        
     </body>
 </html>
