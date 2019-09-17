@@ -285,7 +285,6 @@ footer{
   background-color: #6F6F6F;
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
   padding-top: 50px;
   
@@ -387,9 +386,17 @@ footer img{
     opacity: 1;
   }
   .lien{
+    text-align: left;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
   }
+  .footer_reseaux{
+    order: 1;
+  }
+  .footer_lien{
+    flex
+  }
+  
 
 
     /*================== ACTIONS================*/
