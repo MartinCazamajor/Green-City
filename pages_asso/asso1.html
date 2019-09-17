@@ -2,36 +2,66 @@
 <html>
     <header>
             <meta charset="utf-8" />
-            <link rel="stylesheet" href="asso1.css" />
+            <link rel="stylesheet" href="../style.css" />
             <title>Associations</title>
     </header>
 
     <body>
-        
-        <!-- nom de l'association-->
-        <section id="name-asso">
-            <h1>Association 1</h1>
-            <img src="img/compostri.png" alt="logo compostri">
-        </section>
 
-        <!-- informations de l'association -->
-        <section id="info-asso">
-            <h3>Informations :</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero possimus totam harum quas explicabo nulla, expedita pariatur quibusdam accusamus animi ab corrupti natus ex id laborum, accusantium dicta iure ullam.</p>
-        </section>
+        <!-- nav-->
+        <header>
+
+            <div class="menu">
+                <span class="title">Green-City</span>
+                <input class="burger" type="checkbox">
+                <nav>
+                    <a href="#"><i class="material-icons">Accueil</i></a>
+                    <a href="#"><i class="material-icons">Actions</i></a>
+                    <a href="#"><i class="material-icons">Associations</i></a>
+                    <a href="#"><i class="material-icons">Gestion des dechets</i></a>
+                    <a href="#"><i class="material-icons">Contact</i></a>
+                </nav>
+            </div>
+            
+        </header>
         
-        <!-- description de l'association -->
-        <section id="description-asso">
-            <h3>Description</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quibusdam cum dolore maiores ipsum, fugiat, non nulla neque laudantium error beatae distinctio voluptatum! Placeat velit aliquid reiciendis accusantium deleniti cum.</p>
-            <img src="img/recycle.gif" alt="recyclage">
-        </section>   
+        <!-- présentation de l'association-->
+        <section class="association">
+
+            <!-- nom de l'association-->
+            <div class="name-asso">
+                <h1>Association 1</h1>
+                <img src="../img/logo.png" alt="logo compostri">
+            </div>
+
+            <!-- informations de l'association -->
+            <div class="info-asso">
+                <h3>Informations :</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero possimus totam harum quas explicabo nulla, expedita pariatur quibusdam accusamus animi ab corrupti natus ex id laborum, accusantium dicta iure ullam.</p>
+            </div>
+            
+            <!-- description de l'association -->
+            <div class="description-asso">
+                <h3>Description</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quibusdam cum dolore maiores ipsum, fugiat, non nulla neque laudantium error beatae distinctio voluptatum! Placeat velit aliquid reiciendis accusantium deleniti cum.</p>
+                <img src="../img/recycle.gif" alt="recyclage">
+            </div>  
+
+        </section> 
+
+        <!-- footer -->
+        <footer class="footer_parent">
+                <div class="footer_left">
+                        <a href="#">Actions</a>
+                        <a href="#">Associations</a>
+                        <a href="#">Gestion des déchets</a>
+                        <a href="#">Contact</a>
+                </div>
+                    
+                <div class="footer_right">
+                    <p>footer droite</p>
+                </div>
+            </footer> 
         
-        <!-- actions de l'association-->
-        <section id="actions-asso">
-            <h3>Actions :</h3>
-            <a href="">Action 1</a>
-            <a href="">Action 2</a>
-        </section>
     </body>
 </html>

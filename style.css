@@ -1,4 +1,14 @@
 
+/* GENERAL */
+
+:root {
+    /* vert */
+    --green: #61A93E;
+    /* gris */
+    --grey:#F5F5F5;
+    
+}
+
 /*A mettre une seule fois en haut de la page pour s'assurer de bien toucher les bords des écrans*/
 * {
     margin: 0;
@@ -196,14 +206,17 @@ input[type=submit]:hover {
 }
 
 /* ================ CSS ASSOCIATIONS =============== */
-#associations{
+#associations, .association{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background:#F5F5F5;
+    background:var(--grey);
 }
-#associations h2{
+#associations h2, .association h1{
     text-transform:uppercase;
+    color:var(--green);
+    text-decoration:underline;
+    margin-bottom:20px;
 }
 #associations .group-asso{
     display: flex;
@@ -218,8 +231,9 @@ input[type=submit]:hover {
 }
 #associations .flex-item{
     text-transform: uppercase;
-    color:green;
+    color:var(--green);
 }
+
 
 
 /* ================ CSS FOOTER =============== */
