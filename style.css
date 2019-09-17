@@ -26,13 +26,8 @@ a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 .inline_menu {
   display: none;
-=======
-section{
-    padding:20px 10px 40px 10px;
->>>>>>> assos
 }
 
 /* Apparence de la navbar du header */
@@ -432,19 +427,7 @@ footer img{
         flex-direction: row-reverse;
         align-items: center; 
     }
-<<<<<<< HEAD
 
- 
-/*      CSS ASSOCIATIONS         */
-#associations{
-    display:flex;
-}
-#associations article{
-    height:200px;
-    width:200px;
-    display:flex;
-}
-=======
     #associations .group-asso{
         flex-direction: row;
     }
@@ -481,11 +464,5 @@ h1{
         height: 150px;
         width: 200px;
     }
->>>>>>> assos
 
 }
-<<<<<<< HEAD
-}
-=======
-
->>>>>>> assos
