@@ -93,7 +93,7 @@
                 </ul>
             </article>
         </section>
-        <section class="contact">
+        <section id="contact">
             <h1>Contact</h1>
             <div class="container">
                 <form action="/action_page.php">
@@ -102,7 +102,7 @@
                             <label for="fname">Nom</label>
                         </div>
                         <div class="formulaire">
-                            <input type="text" id="fname" name="firstname" placeholder="Votre nom..">
+                            <input type="text" id="fname" name="firstname" placeholder="John Doe">
                         </div>
                     </div>
                     <div class="ligne">
@@ -110,7 +110,7 @@
                             <label for="lname">Email</label>
                         </div>
                         <div class="formulaire">
-                            <input type="email" id="lname" name="lastname" placeholder="Votre email..">
+                            <input type="email" id="lname" name="lastname" placeholder="John.doe@gmail.com">
                         </div>
                     </div>            
                     <div class="ligne">
@@ -118,7 +118,7 @@
                             <label for="subject">Message</label>
                         </div>
                         <div class="formulaire">
-                            <textarea id="subject" name="subject" placeholder="Votre message.." style="height:200px"></textarea>
+                            <textarea id="subject" name="subject" placeholder="Bonjour..." style="height:200px"></textarea>
                         </div>
                     </div>
                     <div class="ligne">
@@ -129,16 +129,19 @@
         </section> 
         <footer class="footer_parent">
             <div class="footer_reseaux">
-                    <a href="#"><img src="img/facebook-logo.png" alt="lien vers facebook"></a>
-                    <a href="#"><img src="img/instagram-logo.png" alt="lien vers instagram"></a>
-                    <a href="#"><img src="img/twitter-logo.png" alt="lien vers twitter"></a>
-                    <a href="#"><img src="img/youtube-logo.png" alt="lien vers youtube"></a>
+                <a href="#"><img src="img/facebook-logo.png" alt="lien vers facebook"></a>
+                <a href="#"><img src="img/instagram-logo.png" alt="lien vers instagram"></a>
+                <a href="#"><img src="img/twitter-logo.png" alt="lien vers twitter"></a>
+                <a href="#"><img src="img/youtube-logo.png" alt="lien vers youtube"></a>
             </div>            
             <div class="footer_lien">
-                    <a href="#">Actions</a><br>
-                    <a href="#">Associations</a><br>
-                    <a href="#">Gestion des déchets</a><br>
-                    <a href="#">Contact</a><br>
+                <a href="#actions">Actions</a><br>
+                <a href="#associations">Associations</a><br>
+                <a href="#gestion">Gestion des déchets</a><br>
+                <a href="#contact">Contact</a><br>
+            </div>
+            <div class="mentions">
+                <p>Green-City by <a href="https://wildcodeschool.fr">Wild Code School</a> | <a href="#">Mentions légales</a></a></p>
             </div>
         </footer>         
     </body>
