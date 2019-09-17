@@ -137,8 +137,7 @@ a {
   box-sizing: border-box;
 }
 
-
-h3 {
+.contact {
     text-align: center;
 }
 
@@ -180,7 +179,6 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  margin: -8px;
 }
 
 .formulaire {
@@ -193,6 +191,21 @@ input[type=submit]:hover {
 
 footer{
   background-color: #6F6F6F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0px;
+  
+
+}
+footer img{
+  width: 60px;
+  padding: 10px;
+}
+
+footer a{
+  font-size: 25px;
 }
 
 
@@ -214,9 +227,20 @@ footer{
     margin: auto;
     width: 30%;
     display: block;
-
     cursor: pointer;       
     }
+    
+  footer{
+    justify-content: space-between;
+    }
+  .footer_reseaux{
+    float: right;
+  }
+  .footer_lien{
+    float: left;
+  }
+ }
+
 /*      CSS ACTIONS         */
 
 #actions{
