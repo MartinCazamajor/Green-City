@@ -89,13 +89,8 @@ a {
   height: calc(100vh - 50px);
 }
 
-@media screen and only(min-width: 640px) {
-    .navbar {
-
-    }
-}
-
-  /*Dimmensionnement des images*/
+/*------------------------------DEBUT SECTION GESTION DECHETS*/
+/*Dimmensionnement des images*/
 .poubelle, .carte{
     height: 200px;
     width: 200px;
@@ -109,15 +104,21 @@ a {
 
 /*Premier article*/
 .conseil, .collecte {
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.collecte li{
+    margin: 10px;
 }
 
 .gestion h2{
     text-align: center;
     padding: 20px;
 }
+/*------------------------------FIN SECTION GESTION DECHETS*/
 
 * {
     box-sizing: border-box;
