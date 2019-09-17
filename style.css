@@ -288,18 +288,15 @@ footer img{
     margin: 6px auto;
     width: 30%;
     display: block;
-
     cursor: pointer;       
-    } 
-  footer{
-    justify-content: space-between;
-    }
-
-   
-
+  }
   .container{
     margin: -10px;
   }
+
+
+ /*====================FOOTER ================*/
+
   footer img{
     opacity:0.6;
   }
