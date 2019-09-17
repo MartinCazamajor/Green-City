@@ -220,14 +220,18 @@ input[type=submit]:hover {
 #associations .group-asso{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
 }
 #associations .flex-container{
+    max-width:350px;
     margin:20px;
+    border-radius:10px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 #associations img{
-    max-width:450px;
+    max-width:350px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
     height:auto;
 }
 #associations .flex-item{
@@ -235,6 +239,8 @@ input[type=submit]:hover {
     color:var(--white);
     background:var(--green);
     padding:20px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
 }
 
 /* page des assos */
