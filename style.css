@@ -202,7 +202,10 @@ input[type=submit]:hover {
     text-align: center;
     background:#F5F5F5;
 }
-#group-asso{
+#associations h2{
+    text-transform:uppercase;
+}
+#associations .group-asso{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -211,8 +214,7 @@ input[type=submit]:hover {
     margin:20px;
 }
 #associations img{
-    width:50%;
-    height:auto;
+    height:10%;
 }
 #associations .flex-item{
     text-transform: uppercase;
