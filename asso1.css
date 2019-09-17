@@ -1,25 +1,17 @@
-*{
-    margin:0;
-    padding:0;
-}
 
 #associations{
     display:flex;
 }
-article{
+#associations article{
     height:200px;
     width:200px;
     display:flex;
 }
 
-section{
-    padding:20px;
-}
-
-h1{
+#associations h1{
     display:flex;
     justify-content: center;
 }
-p, ul,li{
+#associations p, ul,li{
     margin:10px;
 }
