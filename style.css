@@ -298,6 +298,7 @@ footer img{
     /*================== ACTIONS================*/
     #actions {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     }
     #actions img{
