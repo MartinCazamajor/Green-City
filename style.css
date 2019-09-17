@@ -113,6 +113,7 @@ a {
     height: 200px;
     width: 200px;
     margin: 2Opx;
+    border-radius: 10%;
 }
 
 /*classe gérant l'intégralité de la section gestion des déchets*/
@@ -143,15 +144,18 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 40px;
 }
 
 #actions img{
-  height: 150px;
-  width: 200px;
+  height: 210px;
+  width: 250px;
+  border-radius: 10%;
 
 }
 h1{
   text-align: center;
+  padding: 20px;
 }
 
 
@@ -316,8 +320,8 @@ footer img{
     justify-content: space-around;
     }
     #actions img{
-        height: 150px;
-        width: 200px;
+        height: 210px;
+        width: 250px;
     }
 
     /*=============== GESTION DES DECHETS=================*/
