@@ -109,7 +109,7 @@ a {
 
 /*------------------------------DEBUT SECTION GESTION DECHETS*/
   /*Dimmensionnement des images*/
-.poubelle, .carte{
+.poubelle {
     height: 200px;
     width: 200px;
     margin: 2Opx;
@@ -121,12 +121,12 @@ a {
     background-color: lightgreen;;
 }
 
-.gestion h3, .gestion img{
+.gestion h3, .gestion iframe{
     margin: 20px;
 }
 
 /*articles*/
-.conseil, .collecte {
+.conseil, .map{
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -339,7 +339,7 @@ footer img{
     }
 
     /*=============== GESTION DES DECHETS=================*/
-    .conseil, .collecte{
+    .conseil {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -348,12 +348,14 @@ footer img{
     .conseil h3, .collecte h3{
         width: 100%;
     }
-    .conseil p, .collecte ul{
+    .conseil p{
         width: 50%;
     }
-
-    .collecte img{
-        order: 2;
+     
+    .map {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center; 
     }
 
  
