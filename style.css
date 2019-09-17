@@ -151,21 +151,44 @@ a {
 
 /*=================ACTIONS====================*/
 #actions{
+  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-bottom: 40px;
+  background:var(--grey);
+  align-items: center;
 }
-
+#actions h2{
+  text-transform:uppercase;
+  color:var(--green);
+  text-decoration:underline;
+  padding-bottom:10px;
+}
+#actions .group-action{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+#actions .flex_container{
+  max-width:350px;
+  margin:20px;
+  border-radius:10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
 #actions img{
-  height: 210px;
-  width: 250px;
-  border-radius: 10%;
-
+  max-width:350px;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  height:auto;
 }
-h1{
-  text-align: center;
-  padding: 20px;
+#actions .flex_item{
+  text-transform: uppercase;
+  color:var(--white);
+  background:var(--green);
+  padding:20px;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
 }
 
 
@@ -390,20 +413,18 @@ footer img{
 
 
     /*================== ACTIONS================*/
-    #actions {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    }
-    #actions img{
-        height: 210px;
-        width: 250px;
-    }
+    #actions .group-action{
+      flex-direction: row !important;
+  }
+  #actions img{
+      width:100%;
+      height:auto;
+  }
 
     /*=============== GESTION DES DECHETS=================*/
     .conseil {
         display: flex;
-        flex-direction: row;
+        flex-direction: row ;
         flex-wrap: wrap;
         justify-content: space-around;
     }
@@ -422,40 +443,11 @@ footer img{
 
     /*=============== ASSOCIATIONS =================*/
     #associations .group-asso{
-        flex-direction: row;
+        flex-direction: row !important;
     }
     #associations img{
         width:100%;
         height:auto;
     }
 }
-/* ------------------------------------------*/
 
-/*      CSS ACTIONS         */
-/* ------------------------------------------*/
-
-#actions{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-#actions img{
-    height: 150px;
-    width: 200px;
-}
-h1{
-    text-align: center;
-}
-
-@media screen and (min-width:640px){
-    #actions, #associations {
-       display: flex;
-       justify-content: space-around;
-    }
-    #actions img{
-        height: 150px;
-        width: 200px;
-    }
-
-}
