@@ -6,6 +6,8 @@
     --green: #61A93E;
     /* gris */
     --grey:#F5F5F5;
+    /* blanc */
+    --white:#fff;
     
 }
 
@@ -25,11 +27,7 @@ a {
 }
 
 section{
-    padding:20px;
-}
-
-h2{
-    padding:20px 20px 40px 20px;
+    padding:20px 10px 40px 10px;
 }
 
 /* Apparence de la navbar du header */
@@ -216,7 +214,7 @@ input[type=submit]:hover {
     text-transform:uppercase;
     color:var(--green);
     text-decoration:underline;
-    margin-bottom:20px;
+    padding-bottom:10px;
 }
 #associations .group-asso{
     display: flex;
@@ -225,22 +223,28 @@ input[type=submit]:hover {
 }
 #associations .flex-container{
     margin:20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 #associations img{
-    height:10%;
+    max-width:450px;
+    height:auto;
 }
 #associations .flex-item{
     text-transform: uppercase;
-    color:var(--green);
+    color:var(--white);
+    background:var(--green);
+    padding:20px;
 }
 
 .association .info-asso{
     background: var(--green);
     color:var(--white);
 }
+
 .association .info-asso, .association .description-asso{
     padding:20px;
 }
+
 
 /* ================ CSS FOOTER =============== */
 
@@ -304,8 +308,12 @@ footer a{
         display: flex;
         flex-direction: row;
     }
-    #group-asso{
+    #associations .group-asso{
         flex-direction: row;
+    }
+    #associations img{
+        width:100%;
+        height:auto;
     }
 }
 /* ------------------------------------------*/
@@ -332,7 +340,7 @@ h1{
        display: flex;
        justify-content: space-around;
     }
-    #actions img, #associations img{
+    #actions img{
         height: 150px;
         width: 200px;
     }
