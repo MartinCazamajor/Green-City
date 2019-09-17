@@ -13,6 +13,14 @@ a {
   text-decoration: none;
 }
 
+section{
+    padding:20px;
+}
+
+h2{
+    padding:20px 20px 40px 20px;
+}
+
 /* Apparence de la navbar du header */
 .menu {
   background: #3f51b5;
@@ -187,6 +195,29 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
+/* ================ CSS ASSOCIATIONS =============== */
+#associations{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background:#F5F5F5;
+}
+#group-asso{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#associations .flex-container{
+    margin:20px;
+}
+#associations img{
+    width:50%;
+    height:auto;
+}
+#associations .flex-item{
+    text-transform: uppercase;
+    color:green;
+}
 
 
 /* ================ CSS FOOTER =============== */
@@ -213,11 +244,17 @@ footer{
   input[type=submit]{
     margin: auto;
     width: 30%;
-    display: block;
+    display: block;Ò
 
     cursor: pointer;       
     }
+    #group-asso{
+        flex-direction: row;
+    }
+}
+/* ------------------------------------------*/
 /*      CSS ACTIONS         */
+/* ------------------------------------------*/
 
 #actions{
     display: flex;
@@ -244,20 +281,4 @@ h1{
 
 }
 
-/*      CSS ASSOCIATIONS         */
-#associations{
-    display:flex;
-}
-#associations article{
-    height:200px;
-    width:200px;
-    display:flex;
-}
 
-#associations h1{
-    display:flex;
-    justify-content: center;
-}
-#associations p, ul,li{
-    margin:10px;
-}
