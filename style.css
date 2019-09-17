@@ -190,6 +190,30 @@ a {
     margin: auto;
     width: 30%;
     display: block;
-    cursor: pointer;        
+    cursor: pointer;       
+    }
+/*      CSS ACTIONS         */
+
+#actions{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#actions img{
+    height: 10%;
+}
+h1{
+    text-align: center;
+}
+
+@media screen and (min-width:640px){
+    #actions {
+       display: flex;
+       justify-content: space-around;
+    }
+    #actions img{
+        height: 150px;
+        width: 200px;
     }
 }
