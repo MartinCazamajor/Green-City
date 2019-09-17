@@ -18,6 +18,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+/* ------------------------DEBUT DE LA SECTION HEADER & BANNER */
 a {
   color: #fff;
   text-decoration: none;
@@ -36,7 +37,9 @@ h2{
   background: #3f51b5;
   color: #fff;
   height: 50px;
-  position: relative;
+  position: fixed; /* Met la navbar en position fixed */
+  top: 0; /* Positionne la navbar en haut de la page */
+  width: 100%; /* Full width */
 }
 
 /* Apparence du titre de la navbar */
@@ -79,7 +82,7 @@ h2{
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  font-size: 30px;
+  font-size: 15px;
   line-height: 50px;
   margin: 0;
   outline: 0;
@@ -108,16 +111,18 @@ h2{
   margin-left: 70%;
 }
 
+.banner {
+  display: block;
+  width: auto;
+}
+
+.banner img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
 /*------------------------------DEBUT SECTION GESTION DECHETS*/
-/*Dimmensionnement des images*/
-
-/*A mettre une seule fois en haut de la page pour s'assurer de bien toucher les bords des écrans*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   /*Dimmensionnement des images*/
 .poubelle, .carte{
     height: 200px;
@@ -132,14 +137,14 @@ h2{
 
 /*Premier article*/
 .conseil, .collecte {
-    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .collecte li{
-    margin: 10px;
+    padding: 10px;
 }
 
 .gestion h2{
@@ -151,10 +156,6 @@ h2{
 
 
 /* =============== CSS CONTACT ============ */
-* {
-  box-sizing: border-box;
-}
-
 
 h3 {
     text-align: center;
@@ -198,7 +199,6 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  margin: -8px;
 }
 
 .formulaire {
@@ -246,13 +246,29 @@ input[type=submit]:hover {
 
 footer{
   background-color: #6F6F6F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0px;
+  
+
+}
+footer img{
+  width: 60px;
+  padding: 10px;
+}
+
+footer a{
+  font-size: 25px;
 }
 
 
 /* ================ CSS MEDIA ================ */
 
 @media screen and (min-width: 640px) {
-  .label{
+  /*========== CONTACT ===============*/
+    .label{
     display: inline-block;
     width: 15%;
     margin-top: 6px;
@@ -266,15 +282,34 @@ footer{
   input[type=submit]{
     margin: auto;
     width: 30%;
-    display: block;Ò
-
+    display: block;
     cursor: pointer;       
+    } 
+  footer{
+    justify-content: space-between;
+    }
+
+    /*================== ACTIONS================*/
+    #actions {
+    display: flex;
+    justify-content: space-around;
+    }
+    #actions img{
+        height: 150px;
+        width: 200px;
+    }
+
+    /*=============== GESTION DES DECHETS=================*/
+    .conseil{
+        display: flex;
+        flex-direction: row;
     }
     #group-asso{
         flex-direction: row;
     }
 }
 /* ------------------------------------------*/
+
 /*      CSS ACTIONS         */
 /* ------------------------------------------*/
 
@@ -285,7 +320,8 @@ footer{
 }
 
 #actions img{
-    height: 10%;
+    height: 150px;
+    width: 200px;
 }
 h1{
     text-align: center;
@@ -302,5 +338,4 @@ h1{
     }
 
 }
-
 
