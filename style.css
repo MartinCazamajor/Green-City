@@ -123,10 +123,6 @@ a {
     background-color: lightgreen;;
 }
 
-.gestion h3, .gestion iframe{
-    margin: 20px;
-}
-
 /*articles*/
 .conseil, .map{
     padding: 10px;
