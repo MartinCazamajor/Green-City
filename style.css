@@ -5,12 +5,6 @@ a {
   text-decoration: none;
 }
 
-.material-icons {
-  font-size: 24px;
-  margin-right: 12px;
-  vertical-align: text-bottom;
-}
-
 .menu {
   background: #3f51b5;
   color: #fff;
@@ -56,7 +50,6 @@ a {
   -webkit-appearance: none;
   color: inherit;
   cursor: pointer;
-  font-family: 'Material Icons';
   font-size: 30px;
   line-height: 50px;
   margin: 0;
@@ -74,15 +67,9 @@ a {
 }
 
 .menu .burger:checked:before {
-  content: 'close';
+  content: url('./img/');
 }
 
 .menu .burger:checked + nav {
   height: calc(100vh - 50px);
-}
-
-@media screen and only(min-width: 640px) {
-    .navbar {
-
-    }
 }
