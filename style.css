@@ -13,12 +13,7 @@ a {
   text-decoration: none;
 }
 
-.material-icons {
-  font-size: 24px;
-  margin-right: 12px;
-  vertical-align: text-bottom;
-}
-
+/* Apparence de la navbar du header */
 .menu {
   background: #3f51b5;
   color: #fff;
@@ -26,6 +21,7 @@ a {
   position: relative;
 }
 
+/* Apparence du titre de la navbar */
 .menu .title {
   font-size: 30px;
   font-weight: bold;
@@ -34,6 +30,7 @@ a {
   text-transform: uppercase;
 }
 
+/* Apparence de l'intérieur du menu une fois ouvert */
 .menu nav {
   background: inherit;
   font-size: 20px;
@@ -50,6 +47,7 @@ a {
   line-height: 2.5;
   padding: 0 20px;
   width: 100%;
+  text-align: start;
 }
 
 .menu nav input {
@@ -58,39 +56,51 @@ a {
   color: #fff;
 }
 
+/* Apparence du texte à l'intérieur du menu */
 .menu .burger {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  color: inherit;
-  cursor: pointer;
-  font-family: 'Material Icons';
   font-size: 30px;
   line-height: 50px;
   margin: 0;
   outline: 0;
   padding: 0;
   position: absolute;
-  text-align: center;
+  text-align: left;
   top: 0;
   right: 10px;
   width: auto;
 }
 
+/* Image à afficher pour ouvrir le menu */
 .menu .burger:before {
   content: url('./img/burgermenu.png')
 }
 
+/* Image à afficher une fois le menu ouvert */
 .menu .burger:checked:before {
-  content: 'close';
+  content: url('./img/close.png');
 }
 
+/* Gestion de la taille du menu une fois ouvert */
 .menu .burger:checked + nav {
-  height: calc(100vh - 50px);
+  height: auto;
+  width: auto;
+  margin-left: 70%;
 }
 
 /*------------------------------DEBUT SECTION GESTION DECHETS*/
 /*Dimmensionnement des images*/
+
+/*A mettre une seule fois en haut de la page pour s'assurer de bien toucher les bords des écrans*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /*Dimmensionnement des images*/
 .poubelle, .carte{
     height: 200px;
     width: 200px;
