@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+.inline_menu {
+  display: none;
+}
+
 /* Apparence de la navbar du header */
 .menu {
   background: #3f51b5;
@@ -36,7 +40,7 @@ a {
 /* Apparence de l'intérieur du menu une fois ouvert */
 .menu nav {
   background: inherit;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: bold;
   height: 0;
   overflow: hidden;
@@ -61,10 +65,9 @@ a {
 
 /* Apparence du texte à l'intérieur du menu */
 .menu .burger {
-  appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 50px;
   margin: 0;
   outline: 0;
@@ -214,6 +217,33 @@ footer a{
 /* ================ CSS MEDIA ================ */
 
 @media screen and (min-width: 640px) {
+  /* ========== HEADER ========= */
+
+  .menu .burger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu .title {
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+  }
+
+  .menu .inline_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+
   /*========== CONTACT ===============*/
     .label{
     display: inline-block;
