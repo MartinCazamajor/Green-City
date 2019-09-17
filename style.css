@@ -103,15 +103,6 @@ a {
 
 
 /*------------------------------DEBUT SECTION GESTION DECHETS*/
-/*Dimmensionnement des images*/
-
-/*A mettre une seule fois en haut de la page pour s'assurer de bien toucher les bords des écrans*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   /*Dimmensionnement des images*/
 .poubelle, .carte{
     height: 200px;
@@ -126,14 +117,14 @@ a {
 
 /*Premier article*/
 .conseil, .collecte {
-    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .collecte li{
-    margin: 10px;
+    padding: 10px;
 }
 
 .gestion h2{
@@ -235,6 +226,12 @@ footer{
     #actions img{
         height: 150px;
         width: 200px;
+    }
+
+    /*=============== GESTION DES DECHETS=================*/
+    .conseil{
+        display: flex;
+        flex-direction: row;
     }
 }
  
