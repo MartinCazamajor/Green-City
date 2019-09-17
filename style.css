@@ -19,7 +19,9 @@ a {
   background: #3f51b5;
   color: #fff;
   height: 50px;
-  position: relative;
+  position: fixed; /* Met la navbar en position fixed */
+  top: 0; /* Positionne la navbar en haut de la page */
+  width: 100%; /* Full width */
 }
 
 /* Apparence du titre de la navbar */
@@ -62,7 +64,7 @@ a {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  font-size: 30px;
+  font-size: 15px;
   line-height: 50px;
   margin: 0;
   outline: 0;
