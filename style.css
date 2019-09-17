@@ -1,4 +1,16 @@
 
+/* GENERAL */
+
+:root {
+    /* vert */
+    --green: #61A93E;
+    /* gris */
+    --grey:#F5F5F5;
+    /* blanc */
+    --white:#fff;
+    
+}
+
 /*A mettre une seule fois en haut de la page pour s'assurer de bien toucher les bords des écrans*/
 * {
     margin: 0;
@@ -207,7 +219,65 @@ input[type=submit]:hover {
   margin-top: 6px;
 }
 
+/* ================ CSS ASSOCIATIONS =============== */
+/* page index */
+#associations, .association{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background:var(--grey);
+}
+#associations h2, .association h1{
+    text-transform:uppercase;
+    color:var(--green);
+    text-decoration:underline;
+    padding-bottom:10px;
+}
+#associations .group-asso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#associations .flex-container{
+    max-width:350px;
+    margin:20px;
+    border-radius:10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#associations img{
+    max-width:350px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    height:auto;
+}
+#associations .flex-item{
+    text-transform: uppercase;
+    color:var(--white);
+    background:var(--green);
+    padding:20px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
 
+/* page des assos */
+.association .info-asso{
+    background: var(--green);
+    color:var(--white);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.association .info-asso, .association .description-asso{
+    padding:20px;
+}
+.association .info-asso p, .association .description-asso p{
+    padding-top:20px;
+}
+.association h3{
+    text-decoration:underline;
+}
+.association img{
+    max-width:450px;
+    margin-top:10px; 
+}
 
 /* ================ CSS FOOTER =============== */
 
@@ -350,22 +420,42 @@ footer img{
         align-items: center; 
     }
 
- 
-/*      CSS ASSOCIATIONS         */
-#associations{
-    display:flex;
+    /*=============== ASSOCIATIONS =================*/
+    #associations .group-asso{
+        flex-direction: row;
+    }
+    #associations img{
+        width:100%;
+        height:auto;
+    }
 }
-#associations article{
-    height:200px;
-    width:200px;
-    display:flex;
+/* ------------------------------------------*/
+
+/*      CSS ACTIONS         */
+/* ------------------------------------------*/
+
+#actions{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-#associations h1{
-    display:flex;
-    justify-content: center;
+#actions img{
+    height: 150px;
+    width: 200px;
 }
-#associations p, ul,li{
-    margin:10px;
+h1{
+    text-align: center;
 }
+
+@media screen and (min-width:640px){
+    #actions, #associations {
+       display: flex;
+       justify-content: space-around;
+    }
+    #actions img{
+        height: 150px;
+        width: 200px;
+    }
+
 }
