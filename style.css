@@ -290,7 +290,7 @@ input[type=submit]:hover {
 
 /* ================ CSS ASSOCIATIONS =============== */
 /* page index */
-#associations, .association{
+#associations, #page-asso{
     padding:60px 20px;
     display: flex;
     flex-direction: column;
@@ -299,7 +299,7 @@ input[type=submit]:hover {
     border-top:2px solid var(--greyDark);
     border-bottom:2px solid var(--greyDark);
 }
-#associations h2, .association h1{
+#associations h2, #page-asso h1{
     text-transform:uppercase;
     color:var(--green);
     text-decoration:underline;
@@ -351,23 +351,30 @@ input[type=submit]:hover {
 }
 
 /* page des assos */
-.association .info-asso{
-    background: var(--green);
-    color:var(--white);
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+#page-asso .info-asso{
+  background: var(--green);
+  color:var(--white);
+  border-radius:10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-.association .info-asso, .association .description-asso{
-    padding:20px;
+#page-asso .info-asso, #page-asso .description-asso{
+  padding:20px;
 }
-.association .info-asso p, .association .description-asso p{
-    padding-top:20px;
+#page-asso .info-asso p, #page-asso .description-asso p{
+  padding-top:20px;
 }
-.association h3{
-    text-decoration:underline;
+#page-asso h3{
+  text-decoration:underline;
+  text-transform:uppercase;
 }
-.association img{
-  max-width:450px;
-  margin-top:10px; 
+#page-asso .images-asso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#page-asso .images-asso .images-asso-alone{
+  width:50%;
 }
 
 /* ================ CSS FOOTER =============== */
@@ -518,11 +525,17 @@ footer img{
         width:100%;
         height:auto;
     }
-    .association .info-asso, .association .description-asso{
+    #association .info-asso, #association .description-asso{
       padding:40px;
     }
-    .association img{
+    #association img{
       box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
       margin:20px;
+    }
+    #page-asso .images-asso{
+      flex-direction: row;
+    }
+    #page-asso .images-asso .images-asso-alone{
+      width:30%;
     }
 }
