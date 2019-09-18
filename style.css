@@ -243,7 +243,7 @@ a {
 /* =============== CSS CONTACT ============ */
 
 
-h3 {
+#contact h2 {
     text-align: center;
 }
 
@@ -385,7 +385,6 @@ footer{
   background-color: #6F6F6F;
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
   padding-top: 50px;
   
@@ -486,7 +485,15 @@ footer img{
   footer img:hover{
     opacity: 1;
   }
-
+  .lien{
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer_reseaux{
+    order: 1;
+  }
+  
 
 
     /*================== ACTIONS================*/
