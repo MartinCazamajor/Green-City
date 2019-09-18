@@ -293,7 +293,7 @@ input[type=submit]:hover {
 /* ================ CSS ASSOCIATIONS =============== */
 /* page index */
 #associations, #page-asso{
-    padding:60px 20px;
+    padding:100px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -352,7 +352,44 @@ input[type=submit]:hover {
   box-shadow:5px 5px 5px var(--greenDark);
 }
 
+
+
+
 /* page des assos */
+#page-asso{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows:  auto auto auto auto auto;
+  grid-template-areas:
+    "title"
+    "logo"
+    "description"
+    "information"
+    "images"
+  ;
+}
+#page-asso h1 {
+  grid-area: title;
+}
+#page-asso .logo-asso{
+  grid-area: logo;
+  margin:0 auto;
+}
+#page-asso .info-asso{
+  grid-area: description;
+}
+#page-asso .description-asso{
+  grid-area: information;
+}
+#page-asso .images-asso{
+  grid-area: images;
+  flex-direction: row;
+}
+#page-asso .images-asso .images-asso-alone{
+  width:20%;
+  margin:20px;
+}
+
 #page-asso .info-asso{
   background: var(--green);
   color:var(--white);
@@ -368,6 +405,7 @@ input[type=submit]:hover {
 #page-asso h3{
   text-decoration:underline;
   text-transform:uppercase;
+  text-align:center;
 }
 #page-asso .images-asso{
     display: flex;
@@ -376,7 +414,39 @@ input[type=submit]:hover {
     align-items: center;
 }
 #page-asso .images-asso .images-asso-alone{
-  width:50%;
+  width:30%;
+  height:auto;
+  margin:10px;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+  40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+  }
+  60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+  }
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 /* ================ CSS FOOTER =============== */
@@ -528,23 +598,30 @@ footer img{
 
     /*=============== ASSOCIATIONS =================*/
     #associations .group-asso{
-        flex-direction: row !important;
+      flex-direction: row;
     }
     #associations img{
         width:100%;
         height:auto;
     }
-    #association .info-asso, #association .description-asso{
-      padding:40px;
-    }
-    #association img{
-      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-      margin:20px;
+    
+    #page-asso{
+      display: grid;
+      grid-template-columns: 70% 30%;
+      grid-template-rows:  auto auto auto auto;
+      grid-template-areas:
+        "title title"
+        "description logo"
+        "information information"
+        "images images"
+      ;
     }
     #page-asso .images-asso{
       flex-direction: row;
     }
     #page-asso .images-asso .images-asso-alone{
-      width:30%;
+      width:20%;
+      margin:20px;
     }
+    
 }
