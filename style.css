@@ -111,6 +111,7 @@ a {
   display: block;
   width: 100%;
   height: 100%;
+  padding-top: 9%;
 }
 .banner img {
   width: 100%;
@@ -131,7 +132,7 @@ a {
 
 /*classe gérant l'intégralité de la section gestion des déchets*/
 .gestion {
-  padding: 80px 20px;
+  padding: 90px 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -175,7 +176,7 @@ a {
 
 /*=================ACTIONS====================*/
 #actions{
-  padding: 80px 20px;
+  padding: 90px 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -237,7 +238,7 @@ a {
 /* =============== CSS CONTACT ============ */
 
 #contact{
-  padding: 80px 20px;
+  padding: 90px 20px;
   border-radius: 5px;
   background-color: #f2f2f2;
 }
@@ -294,7 +295,7 @@ input[type=submit]:hover {
 /* ================ CSS ASSOCIATIONS =============== */
 /* page index */
 #associations, #page-asso{
-    padding:80px 20px;
+    padding:90px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
