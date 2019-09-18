@@ -137,7 +137,7 @@ a {
 
 /*classe gérant l'intégralité de la section gestion des déchets*/
 .gestion {
-  padding: 60px 20px;
+  padding: 80px 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -181,7 +181,7 @@ a {
 
 /*=================ACTIONS====================*/
 #actions{
-  padding: 60px 20px;
+  padding: 80px 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -242,9 +242,19 @@ a {
 
 /* =============== CSS CONTACT ============ */
 
-
+#contact{
+  padding: 80px 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
 #contact h2 {
-    text-align: center;
+  text-transform:uppercase;
+  color:var(--green);
+  text-decoration:underline;
+  padding-bottom:20px;
+  text-shadow: 1px 1px 1px var(--Dark);
+  text-align:center;
+
 }
 
 input[type=text], input[type=email],select, textarea {
@@ -263,6 +273,9 @@ label {
 
 .label{
   text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px var(--greyDark);  
+  color: green;
 }
 
 input[type=submit] {
@@ -273,17 +286,11 @@ input[type=submit] {
   border-radius: 4px;
   text-align: center;
   width: 100%;  
+  margin-top: 20px;
 }
 
 input[type=submit]:hover {
   background-color: #626161;
-}
-
-#contact {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  
 }
 
 .formulaire {
@@ -293,7 +300,7 @@ input[type=submit]:hover {
 /* ================ CSS ASSOCIATIONS =============== */
 /* page index */
 #associations, #page-asso{
-    padding:60px 20px;
+    padding:80px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -467,7 +474,7 @@ footer img{
     margin-top: 6px;
   }
   input[type=submit]{
-    margin: 6px auto;
+    margin: 20px auto;
     width: 30%;
     display: block;
     cursor: pointer;       
