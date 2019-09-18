@@ -40,7 +40,7 @@ a {
 .menu {
   background: #3fa46a;
   color: #fff;
-  height: 50px;
+  height: 85px;
   position: fixed; /* Met la navbar en position fixed */
   top: 0; /* Positionne la navbar en haut de la page */
   width: 100%; /* Full width */
@@ -57,7 +57,7 @@ a {
 /* Apparence de l'intérieur du menu une fois ouvert */
 .menu nav {
   background: inherit;
-  font-size: 10px;
+  font-size: 20px;
   font-weight: bold;
   height: 0;
   overflow: hidden;
@@ -80,20 +80,14 @@ a {
   color: #fff;
 }
 
-/* Apparence du texte à l'intérieur du menu */
+/* Apparence du bouton burger menu */
 .menu .burger {
   -moz-appearance: none;
   -webkit-appearance: none;
-  font-size: 20px;
-  line-height: 50px;
   margin: 10px 0px;
-  outline: 0;
-  padding: 0;
   position: absolute;
-  text-align: left;
-  top: 0;
+  top: 10px;
   right: 10px;
-  width: auto;
 }
 
 /* Image à afficher pour ouvrir le menu */
@@ -110,7 +104,7 @@ a {
 .menu .burger:checked + nav {
   height: auto;
   width: auto;
-  margin-left: 70%;
+  margin-left: 65%;
 }
 
 .banner {
@@ -441,7 +435,7 @@ footer img{
     transition: 0.3s ease;
     background: #3fa46a;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 25px;
     text-decoration: none;
     border-top: 4px solid #3fa46a;
     border-bottom: 4px solid #3fa46a;
