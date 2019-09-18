@@ -8,6 +8,12 @@
     --grey:#F5F5F5;
     /* blanc */
     --white:#fff;
+    /* vert foncé */
+    --greenDark:#3fa46a;
+    /* gris sombre */
+    --greyDark:#6F6F6F;
+    /* noir */
+    --Dark:#000;
     
 }
 
@@ -38,6 +44,7 @@ a {
   position: fixed; /* Met la navbar en position fixed */
   top: 0; /* Positionne la navbar en haut de la page */
   width: 100%; /* Full width */
+  z-index:9999;
 }
 
 /* Apparence du titre de la navbar */
@@ -131,26 +138,43 @@ a {
 
 /*classe gérant l'intégralité de la section gestion des déchets*/
 .gestion {
-    background-color: lightgreen;;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: var(--green);
+  color:var(--white);
+}
+.gestion h2{
+  text-transform:uppercase;
+  text-decoration:underline;
+  padding-bottom:10px;
+  text-align:center;
 }
 
 /*articles*/
+.gestion h3{
+  text-transform:uppercase;
+  text-shadow: 3px 3px 5px var(--greyDark);
+  border-radius:10px; 
+}
+.gestion h3, .gestion p{
+  margin: 15px;
+}
 .conseil, .map{
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.conseil h3, .conseil p{
-    margin: 15px;
+.conseil p{
+  background:var(--grey);
+  color:var(--green);
+  border-radius:10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding:40px 20px;
 }
-
-.gestion h2{
-    text-align: center;
-    padding: 20px;
-}
-
 .map *{
     margin: 15px;
 }
@@ -162,14 +186,15 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background:var(--grey);
   align-items: center;
+  background:var(--green);
+  color:var(--white);
 }
 #actions h2{
   text-transform:uppercase;
-  color:var(--green);
   text-decoration:underline;
   padding-bottom:10px;
+  text-shadow: 1px 1px 2px var(--Dark);
 }
 #actions .group-action{
   display: flex;
@@ -178,6 +203,7 @@ a {
   align-content: center;
 }
 #actions .flex_container{
+  opacity:0.85;
   max-width:350px;
   margin:20px;
   border-radius:10px;
@@ -188,16 +214,29 @@ a {
   border-top-left-radius:10px;
   border-top-right-radius:10px;
   height:auto;
+  background:var(--grey);
 }
 #actions .flex_item{
   text-transform: uppercase;
-  color:var(--white);
-  background:var(--green);
+  color:var(--green);
+  background:var(--white);
   padding:20px;
   border-bottom-left-radius:10px;
   border-bottom-right-radius:10px;
 }
-
+#actions .flex_container:hover{
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+  opacity:1;
+  text-shadow: 1px 1px 2px var(--Dark);
+  box-shadow:5px 5px 5px var(--Dark);
+}
 
 /* =============== CSS CONTACT ============ */
 
@@ -257,12 +296,16 @@ input[type=submit]:hover {
     flex-direction: column;
     align-items: center;
     background:var(--grey);
+    border-top:2px solid var(--greyDark);
+    border-bottom:2px solid var(--greyDark);
 }
 #associations h2, .association h1{
     text-transform:uppercase;
     color:var(--green);
     text-decoration:underline;
     padding-bottom:20px;
+    text-shadow: 1px 1px 2px var(--Dark);
+    text-align:center;
 }
 #associations .group-asso{
     display: flex;
@@ -271,17 +314,14 @@ input[type=submit]:hover {
     align-items: center;
 }
 #associations .flex-container{
-    opacity:0.85;
+    opacity:0.8;
     max-width:350px;
     margin:20px;
+    border:1px solid var(--green);
     border-radius:10px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-#associations .flex-container:hover{
-    opacity:1;
-}
 #associations img{
-    margin:10px;
     max-width:350px;
     border-top-left-radius:10px;
     border-top-right-radius:10px;
@@ -295,6 +335,19 @@ input[type=submit]:hover {
     padding:20px;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
+}
+#associations .flex-container:hover{
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -o-transition: all .5s linear;
+  transition: all .5s linear;
+  opacity:1;
+  text-shadow: 1px 1px 2px var(--Dark);
+  box-shadow:5px 5px 5px var(--greenDark);
 }
 
 /* page des assos */
