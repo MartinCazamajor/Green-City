@@ -7,10 +7,11 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     </head>
     <body>
+
         <!--     PARTIE HEADER & BANNER     -->
         <header id="home">
             <div class="menu">
-                <a href="./index.html"><span class="title">Green-City</span></a>
+                <a href="./index.html"><span class="title"><img src="img/Logo GC.png"></span></a>
                 <input class="burger" type="checkbox">
                 <nav>
                     <a href="#home">Accueil</a>
@@ -19,6 +20,7 @@
                     <a href="#gestion">Gestion des dechets</a>
                     <a href="#contact">Contact</a>
                 </nav>
+
                 <div class="inline_menu">
                     <a class="hover_style" href="#home">Accueil</a>
                     <a class="hover_style" href="#actions">Actions</a>
@@ -26,56 +28,76 @@
                     <a class="hover_style" href="#gestion">Gestion des dechets</a>
                     <a class="hover_style" href="#contact">Contact</a>
                 </div>
+
             </div>
             <div class="banner">
-                <img src="./img/banner.jpg" alt="banner">
+                <img src="./img/Banniere.png" alt="banner">
             </div>
+
         </header>
+
         <!--        PARTIE ACTION        -->
-        <h1>Actions</h1>
         <section id="actions">
-                <div>
-                    <a href="/pages_action/action1.html"><img src="img/art-background-blur-255441.jpg" alt="Photo Action 1"></a>
-                    <p>blabla action 1</p>
+        <h2>Actions</h2>
+            <div class="group-action">
+                <div class="flex_container">
+                    <a href="/pages_action/action1.html">
+                        <img src="img/art-background-blur-255441.jpg" alt="Photo Action 1">
+                        <p class="flex_item">action 1</p>
+                    </a>
                 </div>
-                <div>
-                    <a href="/pages_action/action2.html"><img src="img/art-background-blur-255441.jpg" alt="Photo Action 2"></a>
-                    <p>blabla action 2</p>
+                <div class="flex_container">
+                    <a href="/pages_action/action1.html">
+                        <img src="img/art-background-blur-255441.jpg" alt="Photo Action 1">
+                        <p class="flex_item">action 2</p>
+                    </a>
                 </div>
-                <div>
-                    <a href="/pages_action/action3.html"><img src="img/art-background-blur-255441.jpg" alt="Photo Action 3"></a>
-                    <p>blabla action 3</p>
+                <div class="flex_container">
+                        <a href="/pages_action/action1.html">
+                            <img src="img/art-background-blur-255441.jpg" alt="Photo Action 1">
+                            <p class="flex_item">action 3</p>
+                        </a>
                 </div>
+            </div> 
         </section>
-        <section id="associations">
-            <h2>Associations :</h2>
-            <div id="group-asso">
-                <!-- association -->
-                <article>
-                    <a href="association-1.html">
-                        <img src="" alt="">
-                        <h3>Compostri</h3>
-                        <div class="text-overlay">Voir</div>
+        <!-------------------------------------------------------------------->
+    <!--        PARTIE ASSOCIATIONS        -->
+    <section id="associations">
+
+        <h2>Associations</h2>
+        <div class="group-asso">
+
+            <!-- association -->
+            <div class="flex-container">
+                    <a href="pages_asso/asso1.html" title="association 1">
+                        <img src="img/logo-asso1.png" alt="Photo asso 1">
+                        <p class="flex-item">association 1</p>
                     </a>
-                </article>
-                <!-- association -->
-                <article>
-                    <a href="association-2.html">
-                        <h3>Asso 2</h3>
-                        <div class="text-overlay">Voir</div>
-                    </a>
-                </article>
-                <!-- association -->
-                <article>
-                    <a href="association-3.html">
-                        <h3>Asso 3</h3>
-                        <div class="text-overlay">Voir</div>
-                    </a>
-                </article>
+                </div>
+            <!-- association -->
+            <div class="flex-container">
+                <a href="pages_asso/asso2.html" title="association 2">
+                    <img src="img/logo-asso2.png" alt="Photo asso 2">
+                    <p class="flex-item">association 2</p>
+                </a>
             </div>
-        </section>
-        <!--===================GESTION DES DECHETS==========================-->
+
+            <!-- association -->
+            <div class="flex-container">
+                <a href="pages_asso/asso3.html" title="association 3">
+                    <img src="img/logo-asso3.png" alt="Photo asso 3">
+                    <p class="flex-item">association 3</p>
+                </a> 
+            </div>
+
+        </div>
+
+    </section>
+    <!-- fin de la partie association -->
+    <!-------------------------------------------------------------------->
+
         <section class="gestion" id="gestion">
+
             <h2>Gestion des déchets</h2>
             <article class="conseil">
                 <h3>Conseils</h3>
@@ -97,7 +119,7 @@
             </article>
         </section>
         <section id="contact">
-            <h1>Contact</h1>
+            <h2>Contact</h2>
             <div class="container">
                 <form action="/action_page.php">
                     <div class="ligne">
@@ -131,17 +153,19 @@
             </div>
         </section> 
         <footer class="footer_parent">
-            <div class="footer_reseaux">
-                <a href="#"><img src="img/facebook-logo.png" alt="lien vers facebook"></a>
-                <a href="#"><img src="img/instagram-logo.png" alt="lien vers instagram"></a>
-                <a href="#"><img src="img/twitter-logo.png" alt="lien vers twitter"></a>
-                <a href="#"><img src="img/youtube-logo.png" alt="lien vers youtube"></a>
-            </div>            
-            <div class="footer_lien">
-                <a href="#actions">Actions</a><br>
-                <a href="#associations">Associations</a><br>
-                <a href="#gestion">Gestion des déchets</a><br>
-                <a href="#contact">Contact</a><br>
+            <div class="lien">
+                <div class="footer_reseaux">
+                    <a href="#"><img src="img/facebook-logo.png" alt="lien vers facebook"></a>
+                    <a href="#"><img src="img/instagram-logo.png" alt="lien vers instagram"></a>
+                    <a href="#"><img src="img/twitter-logo.png" alt="lien vers twitter"></a>
+                    <a href="#"><img src="img/youtube-logo.png" alt="lien vers youtube"></a>
+                </div>            
+                <div class="footer_lien">
+                    <a href="#actions">Actions</a><br>
+                    <a href="#associations">Associations</a><br>
+                    <a href="#gestion">Gestion des déchets</a><br>
+                    <a href="#contact">Contact</a><br>
+                </div>
             </div>
             <div class="mentions">
                 <p>Green-City by <a href="https://wildcodeschool.fr">Wild Code School</a> | <a href="#">Mentions légales</a></a></p>
