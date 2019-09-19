@@ -230,9 +230,9 @@ a {
   -o-transition: all .5s linear;
   transition: all .5s linear;
   opacity:1;
-  text-shadow: 1px 1px 2px var(--Dark);
-  box-shadow:5px 5px 5px var(--Dark);
+  box-shadow:5px 5px 5px rgba(255, 255, 255, 0.2);
 }
+
 
 /* =============== CSS CONTACT ============ */
 
