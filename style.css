@@ -353,8 +353,6 @@ input[type=submit]:hover {
 }
 
 
-
-
 /* page des assos */
 #page-asso{
   display: grid;
@@ -374,30 +372,27 @@ input[type=submit]:hover {
 #page-asso .logo-asso{
   grid-area: logo;
   margin:0 auto;
-}
-#page-asso .info-asso{
-  grid-area: description;
+  margin-top:20px;
+  margin-bottom:20px;
 }
 #page-asso .description-asso{
   grid-area: information;
+  justify-content: center;
+  text-align:center;
 }
-#page-asso .images-asso{
-  grid-area: images;
-  flex-direction: row;
-}
-#page-asso .images-asso .images-asso-alone{
-  width:20%;
-  margin:20px;
-}
-
 #page-asso .info-asso{
+  grid-area: description;
   background: var(--green);
   color:var(--white);
   border-radius:10px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  text-align:center;
 }
 #page-asso .info-asso, #page-asso .description-asso{
-  padding:20px;
+  padding:40px 20px;
+  justify-content: center;
+  align-content: center;
 }
 #page-asso .info-asso p, #page-asso .description-asso p{
   padding-top:20px;
@@ -408,15 +403,17 @@ input[type=submit]:hover {
   text-align:center;
 }
 #page-asso .images-asso{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: images;
 }
 #page-asso .images-asso .images-asso-alone{
   width:30%;
   height:auto;
   margin:10px;
+  border-radius:50%;
 }
 
 @keyframes bounce {
@@ -622,6 +619,9 @@ footer img{
     #page-asso .images-asso .images-asso-alone{
       width:20%;
       margin:20px;
+    }
+    #page-asso .info-asso, #page-asso .description-asso{
+      padding:40px;
     }
     
 }
