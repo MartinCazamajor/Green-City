@@ -118,11 +118,12 @@ a {
   max-height: 100%;
   object-fit: cover;
   margin-top: 50px;
+  padding-top: 9%;
 }
 
 /*=================ACTIONS====================*/
 #actions{
-  padding: 60px 20px;
+  padding: 90px 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -183,7 +184,7 @@ a {
 /* ================ CSS ASSOCIATIONS =============== */
 /* page index */
 #associations, #page-asso{
-  padding:60px 20px;
+  padding:90px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,7 +280,7 @@ width:50%;
 
 /*classe gérant l'intégralité de la section gestion des déchets*/
 .gestion {
-  padding: 60px 20px;
+  padding: 90px 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -321,55 +322,6 @@ width:50%;
 }
 /*------------------------------FIN SECTION GESTION DECHETS*/
 
-/* =============== CSS CONTACT ============ */
-
-
-#contact h2 {
-    text-align: center;
-}
-
-input[type=text], input[type=email],select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-  margin-top: 6px;  
-}
-
-.label{
-  text-align: center;
-}
-
-input[type=submit] {
-  background-color: #6F6F6F;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  text-align: center;
-  width: 100%;  
-}
-
-input[type=submit]:hover {
-  background-color: #626161;
-}
-
-#contact {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  
-}
-
-.formulaire {
-  margin-top: 6px;
-}
 
 /* ================ CSS ASSOCIATIONS =============== */
 /* page index */
@@ -527,6 +479,66 @@ input[type=submit]:hover {
   animation: bounce 2s infinite;
 }
 
+
+/* =============== CSS CONTACT ============ */
+
+
+#contact h2 {
+  text-transform:uppercase;
+  text-decoration:underline;
+  padding-bottom:10px;
+  text-align:center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+
+input[type=text], input[type=email],select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  margin-top: 6px;  
+}
+
+.label{
+  text-align: center;
+}
+
+input[type=submit] {
+  background-color: #6F6F6F;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;  
+  margin-top: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #626161;
+}
+
+#contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 90px;
+  
+}
+
+.formulaire {
+  margin-top: 6px;
+}
+
+
 /* ================ CSS FOOTER =============== */
 
 footer{
@@ -633,6 +645,29 @@ footer img{
   #page-asso .images-asso .images-asso-alone{
     width:30%;
   }
+  /*=============== PAGES ASSOCIATIONS =================*/
+ 
+  #page-asso{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows:  auto auto auto auto;
+    grid-template-areas:
+      "title title"
+      "description logo"
+      "information information"
+      "images images"
+    ;
+  }
+  #page-asso .images-asso{
+    flex-direction: row;
+  }
+  #page-asso .images-asso .images-asso-alone{
+    width:20%;
+    margin:20px;
+  }
+  #page-asso .info-asso, #page-asso .description-asso{
+    padding:40px;
+  }
 
   /*=============== GESTION DES DECHETS=================*/
   .conseil {
@@ -671,10 +706,15 @@ footer img{
     margin: 6px auto;
     width: 30%;
     display: block;
-    cursor: pointer;       
+    cursor: pointer;   
+    margin-top: 20px;    
   }
   .container{
     margin: -10px;
+  }
+
+  #contact{
+    padding-top: 10px !important;
   }
   
 
@@ -695,56 +735,5 @@ footer img{
     order: 1;
   }
 
-    /*=============== GESTION DES DECHETS=================*/
-    .conseil {
-        display: flex;
-        flex-direction: row ;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .conseil h3, .collecte h3{
-        width: 100%;
-    }
-    .conseil p{
-        width: 50%;
-    }
-     
-    .map {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-around; 
-    }
-
-    /*=============== ASSOCIATIONS =================*/
-    #associations .group-asso{
-      flex-direction: row;
-    }
-    #associations img{
-        width:100%;
-        height:auto;
-    }
-    
-    #page-asso{
-      display: grid;
-      grid-template-columns: 70% 30%;
-      grid-template-rows:  auto auto auto auto;
-      grid-template-areas:
-        "title title"
-        "description logo"
-        "information information"
-        "images images"
-      ;
-    }
-    #page-asso .images-asso{
-      flex-direction: row;
-    }
-    #page-asso .images-asso .images-asso-alone{
-      width:20%;
-      margin:20px;
-    }
-    #page-asso .info-asso, #page-asso .description-asso{
-      padding:40px;
-    }
     
 }
