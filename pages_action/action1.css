@@ -8,84 +8,84 @@
 
 /*==============HEADER==============*/
 a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .inline_menu {
-    display: none;
-  }
-  
-  /* Apparence de la navbar du header */
-  .menu {
-    background: #3fa46a;
-    color: #fff;
-    height: 50px;
-    position: fixed; /* Met la navbar en position fixed */
-    top: 0; /* Positionne la navbar en haut de la page */
-    width: 100%; /* Full width */
-  }
-  
-  /* Apparence du titre de la navbar */
-  .menu .title {
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 50px;
-    padding: 0 20px;
-    text-transform: uppercase;
-  }
-  
-  /* Apparence de l'intérieur du menu une fois ouvert */
-  .menu nav {
-    background: inherit;
-    font-size: 10px;
-    font-weight: bold;
-    height: 0;
-    overflow: hidden;
-    text-transform: uppercase;
-    transition: height .2s;
-  }
-  
-  .menu nav > * {
-    display: block;
-    letter-spacing: 1px;
-    line-height: 2.5;
-    padding: 0 20px;
-    width: 100%;
-    text-align: start;
-  }
-  
-  .menu nav input {
-    background: rgba(0,0,0,.2);
-    border: none;
-    color: #fff;
-  }
-  
-  /* Apparence du texte à l'intérieur du menu */
-  .menu .burger {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    font-size: 20px;
-    line-height: 50px;
-    margin: 10px 0px;
-    outline: 0;
-    padding: 0;
-    position: absolute;
-    text-align: left;
-    top: 0;
-    right: 10px;
-    width: auto;
-  }
-  
-  /* Image à afficher pour ouvrir le menu */
-  .menu .burger:before {
-    content: url('/img/menu.png');
-  }
-  
-  /* Image à afficher une fois le menu ouvert */
-  .menu .burger:checked:before {
-    content: url('/img/menu.png');
-  }
+  color: #fff;
+  text-decoration: none;
+}
+
+.inline_menu {
+  display: none;
+}
+
+/* Apparence de la navbar du header */
+.menu {
+  background: #3fa46a;
+  color: #fff;
+  height: 85px;
+  position: fixed; /* Met la navbar en position fixed */
+  top: 0; /* Positionne la navbar en haut de la page */
+  width: 100%; /* Full width */
+  z-index:9999;
+}
+
+/* Apparence du titre de la navbar */
+.menu img{
+  height: 80px;
+  width: 250px;
+  margin-left: 20px
+}
+
+/* Apparence de l'intérieur du menu une fois ouvert */
+.menu nav {
+  background: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: height .2s;
+}
+
+.menu nav > * {
+  display: block;
+  letter-spacing: 1px;
+  line-height: 2.5;
+  padding: 0 20px;
+  width: 100%;
+  text-align: start;
+}
+
+.menu nav input {
+  background: rgba(0,0,0,.2);
+  border: none;
+  color: #fff;
+}
+
+/* Apparence du bouton burger menu */
+.menu .burger {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  margin: 10px 0px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Image à afficher pour ouvrir le menu */
+.menu .burger:before {
+  content: url('../img/menu.png');
+}
+
+/* Image à afficher une fois le menu ouvert */
+.menu .burger:checked:before {
+  content: url('../img/close.png');
+}
+
+/* Gestion de la taille du menu une fois ouvert */
+.menu .burger:checked + nav {
+  height: auto;
+  width: auto;
+  margin-left: 65%;
+}
   
   /* Gestion de la taille du menu une fois ouvert */
   .menu .burger:checked + nav {
@@ -96,77 +96,150 @@ a {
 
   /*==============ACTIONS===========*/
 
+  #background_color{
+    background-color: #FFFDC7;
+  }
+.information img{
+    display: none;
+}
+
+h1{
+  text-transform: uppercase;
+  color: #61A93E;
+  margin-top: 80px;
+  font-size: 40px;
+  padding: 40px;
+}
+
 .nom_img img{
     height: 210px;
     width: 250px;
     margin: 20px;
-    border-radius: 10%
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .nom_img{
     text-align: center ;
 }
-.nom_img h1{
-    margin-top: 80px;
-    font-size: 40px;
-}
+
 .information div{
     margin: 0 50px;
 }
 .information div p{
     text-align: justify;
     padding: 15px;
+    line-height: 160%;
  }
 .information h3{
     padding: 35px;
     font-size: 25px;
+    color: #61A93E;
 }
-
 .description h3{
     padding: 10px 35px;
     font-size: 25px;
+    color: #61A93E;
+}
+/*---------------------Energie Renouvelable et Tri SAC-----------------*/
+.energie, .tri-sac{
+    display: flex;
+    flex-direction: column;
 }
 
-.description p{
-    text-align: justify;
-    padding: 15px;
-    margin: 0 50px;
-    margin-bottom: 50px;
-
-}
-.information img{
-    display: none;
+.energie div, .tri-sac div{
+  border-radius: 5%;
+  width: 80%;
+  padding:20px ;
+  margin: 20px auto;
+  background-color: #61A93E;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.energie p, .tri-sac p{
+  padding: 20px;
+  width: 90%;
+  text-align: justify;
+  margin: 0 auto;
+  color: white;
+  line-height: 150%
+}
+
+.energie h4, .tri-sac h4{
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #FFF;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 4%;
+  padding: 5px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.tri-sac h5{
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.energie ul li, .tri-sac ul li{
+  margin: -10px 0px 10px 20%;
+  color: white;
+}
+  /*-------------------Manger bio, manger local---------------------------*/
+
+.bio{
+  line-height: 170%;
+  background-color: #61A93E;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 2%;
+  color: white;
+}
+.distributeur-bio div{
+  border-radius: 5%;
+  width: 80%;
+  padding:20px ;
+  margin: 20px auto;
+  line-height: 150%;
+  text-align: justify;
+}
+.distributeur-bio h4{
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #FFF;
+  width: 60%;
+  margin: 20px auto;
+  border-radius: 4%;
+  padding: 5px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
 
 /*==============FOOTER===========*/
 footer{
-    background-color: #6F6F6F;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-top: 50px;
-    
+  background-color: #6F6F6F;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 50px;
   
-  }
-  footer img{
-    width: 60px;
-    padding: 5px;   
-  }
-  
-  .footer_lien{
-    font-size: 20px;
-  }
-  
-  .mentions{
-    margin: 15px 0px 15px 0px;
-    font-size: 15px;
-    color: #f2f2f2;
-  }
 
+}
+footer img{
+  width: 60px;
+  padding: 5px;   
+}
 
+.footer_lien{
+  font-size: 20px;
+}
 
+.mentions{
+  margin: 15px 0px 15px 0px;
+  font-size: 15px;
+  color: #f2f2f2;
+}
 
 
 
@@ -235,21 +308,57 @@ footer{
     
     .information div{
         display: flex;
+        align-items: center;
+        text-align: justify;
     }
+
     .information img{
         display: block !important;
         height: 210px;
         width: 250px;
-        padding: 15px;
+        margin: 20px;
         border-radius: 10%;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
     }
+    .energie, .tri-sac, .distributeur-bio{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .energie div{
+      width: 25%;
+      margin: 20px;
+    }
+    .tri-sac div{
+      width: 45%;
+    }
+
+    .distributeur-bio div{
+      width: 33%
+    }
+
+    .mangerbio{
+      height: 210px !important;
+      width: 250px !important;
+      border-radius: 10%;
+    }
+
+    
     /*========FOOTER========*/
     footer img{
-        opacity:0.6;
-      }
-      footer img:hover{
-        opacity: 1;
-      }
-  
-}
-  
+      opacity:0.6;
+    }
+    footer img:hover{
+      opacity: 1;
+    }
+    .lien{
+      text-align: left;
+      display: flex;
+      justify-content: space-around;
+    }
+    .footer_reseaux{
+      order: 1;
+    }
+  }

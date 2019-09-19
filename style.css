@@ -107,6 +107,7 @@ a {
   margin-left: 65%;
 }
 
+
 .banner {
   display: block;
   width: 100%;
@@ -119,60 +120,9 @@ a {
   max-height: 100%;
   object-fit: cover;
   margin-top: 50px;
+  padding-top: 9%;
 }
 
-
-/*------------------------------DEBUT SECTION GESTION DECHETS*/
-  /*Dimmensionnement des images*/
-.poubelle {
-    height: 200px;
-    width: 200px;
-    border-radius: 10%;
-}
-
-/*classe gérant l'intégralité de la section gestion des déchets*/
-.gestion {
-  padding: 90px 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  background-color: var(--green);
-  color:var(--white);
-}
-.gestion h2{
-  text-transform:uppercase;
-  text-decoration:underline;
-  padding-bottom:10px;
-  text-align:center;
-}
-
-/*articles*/
-.gestion h3{
-  text-transform:uppercase;
-  text-shadow: 3px 3px 5px var(--greyDark);
-  border-radius:10px; 
-}
-.gestion h3, .gestion p{
-  margin: 15px;
-}
-.conseil, .map{
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.conseil p{
-  background:var(--grey);
-  color:var(--green);
-  border-radius:10px;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-  padding:40px 20px;
-}
-.map *{
-    margin: 15px;
-}
-/*------------------------------FIN SECTION GESTION DECHETS*/
 
 /*=================ACTIONS====================*/
 #actions{
@@ -188,7 +138,6 @@ a {
   text-transform:uppercase;
   text-decoration:underline;
   padding-bottom:10px;
-  text-shadow: 1px 1px 2px var(--Dark);
 }
 #actions .group-action{
   display: flex;
@@ -198,7 +147,7 @@ a {
 }
 #actions .flex_container{
   opacity:0.85;
-  max-width:350px;
+  max-width:200px;
   margin:20px;
   border-radius:10px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -207,7 +156,7 @@ a {
   opacity:1;
 }
 #actions img{
-  max-width:350px;
+  max-width:200px;
   border-top-left-radius:10px;
   border-top-right-radius:10px;
   height:auto;
@@ -231,9 +180,221 @@ a {
   -o-transition: all .5s linear;
   transition: all .5s linear;
   opacity:1;
-  text-shadow: 1px 1px 2px var(--Dark);
-  box-shadow:5px 5px 5px var(--Dark);
+  box-shadow:5px 5px 5px rgba(255, 255, 255, 0.2);
+} 
+
+/* ================ CSS ASSOCIATIONS =============== */
+/* page index */
+#associations, #page-asso{
+  padding:100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:var(--grey);
+  border-top:2px solid var(--greyDark);
+  border-bottom:2px solid var(--greyDark);
 }
+#associations h2, #page-asso h1{
+  text-transform:uppercase;
+  color: #61A93E;
+  text-decoration:underline;
+  padding-bottom:20px;
+  text-align:center;
+}
+#associations .group-asso{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#associations .flex-container{
+  opacity:0.8;
+  max-width:200px; 
+  margin:20px;
+  border:1px solid var(--green);
+  border-radius:10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#associations img{
+  max-width:200px; 
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+  height:auto;
+}
+#associations .flex-item{
+  text-transform: uppercase;
+  text-align:center;
+  color:var(--white);
+  background:var(--green);
+  padding:20px;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+}
+#associations .flex-container:hover{
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-o-transform: scale(1.1);
+transform: scale(1.1);
+-webkit-transition: all .5s linear;
+-moz-transition: all .5s linear;
+-o-transition: all .5s linear;
+transition: all .5s linear;
+opacity:1;
+text-shadow: 1px 1px 2px var(--Dark);
+box-shadow:5px 5px 5px var(--greenDark);
+}
+
+
+/* page des assos */
+#page-asso{
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows:  auto auto auto auto auto;
+grid-template-areas:
+  "title"
+  "logo"
+  "description"
+  "information"
+  "images"
+;
+}
+#page-asso h1 {
+grid-area: title;
+}
+#page-asso .logo-asso{
+grid-area: logo;
+margin:0 auto;
+margin-top:20px;
+margin-bottom:20px;
+}
+#page-asso .description-asso{
+grid-area: information;
+justify-content: center;
+text-align:center;
+}
+#page-asso .info-asso{
+grid-area: description;
+background: var(--green);
+color:var(--white);
+border-radius:10px;
+box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+justify-content: center;
+text-align:center;
+}
+#page-asso .info-asso, #page-asso .description-asso{
+padding:40px 20px;
+justify-content: center;
+align-content: center;
+}
+#page-asso .info-asso p, #page-asso .description-asso p{
+padding-top:20px;
+}
+#page-asso h3{
+text-decoration:underline;
+text-transform:uppercase;
+text-align:center;
+}
+#page-asso .images-asso{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+grid-area: images;
+}
+#page-asso .images-asso .images-asso-alone{
+width:30%;
+height:auto;
+margin:10px;
+border-radius:50%;
+}
+
+@keyframes bounce {
+0%,
+20%,
+50%,
+80%,
+100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+}
+60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+}
+}
+.bounce {
+-moz-animation: bounce 2s infinite;
+-webkit-animation: bounce 2s infinite;
+animation: bounce 2s infinite;
+}
+
+/*-------------------_GESTION -------------------*/
+
+/*Dimensionnement des images*/
+  .poubelle {
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+}
+
+/*classe gérant l'intégralité de la section gestion des déchets*/
+.gestion {
+  padding: 90px 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: var(--green);
+  color:var(--white);
+}
+.gestion h2{
+  text-transform:uppercase;
+  text-decoration:underline;
+  padding-bottom:10px;
+  text-align:center;
+}
+
+/*articles de dechets*/
+.gestion h3{
+  text-transform:uppercase;
+  text-shadow: 3px 3px 5px var(--greyDark);
+  border-radius:10px; 
+}
+.gestion h3, .gestion p{
+  margin: 15px;
+}
+.conseil, .map{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.conseil p{
+  background:var(--grey);
+  color:var(--green);
+  border-radius:10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding:40px 20px;
+}
+.map {
+    margin: 15px;
+}
+.map iframe{
+  width: 250px;
+  height: 200px;
+}
+
+/*------------------------------FIN SECTION GESTION DECHETS*/
 
 /* =============== CSS CONTACT ============ */
 
@@ -244,13 +405,16 @@ a {
 }
 #contact h2 {
   text-transform:uppercase;
-  color:var(--green);
   text-decoration:underline;
-  padding-bottom:20px;
-  text-shadow: 1px 1px 1px var(--Dark);
+  padding-bottom:10px;
   text-align:center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #61A93E;
 
 }
+
+
 
 input[type=text], input[type=email],select, textarea {
   width: 100%;
@@ -288,97 +452,15 @@ input[type=submit]:hover {
   background-color: #626161;
 }
 
+#contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 90px;
+}
+
+
 .formulaire {
   margin-top: 6px;
-}
-
-/* ================ CSS ASSOCIATIONS =============== */
-/* page index */
-#associations, #page-asso{
-    padding:90px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background:var(--grey);
-    border-top:2px solid var(--greyDark);
-    border-bottom:2px solid var(--greyDark);
-}
-#associations h2, #page-asso h1{
-    text-transform:uppercase;
-    color:var(--green);
-    text-decoration:underline;
-    padding-bottom:20px;
-    text-shadow: 1px 1px 2px var(--Dark);
-    text-align:center;
-}
-#associations .group-asso{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#associations .flex-container{
-    opacity:0.8;
-    max-width:350px;
-    margin:20px;
-    border:1px solid var(--green);
-    border-radius:10px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-#associations img{
-    max-width:350px;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-    height:auto;
-}
-#associations .flex-item{
-    text-transform: uppercase;
-    text-align:center;
-    color:var(--white);
-    background:var(--green);
-    padding:20px;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius:10px;
-}
-#associations .flex-container:hover{
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transition: all .5s linear;
-  -moz-transition: all .5s linear;
-  -o-transition: all .5s linear;
-  transition: all .5s linear;
-  opacity:1;
-  text-shadow: 1px 1px 2px var(--Dark);
-  box-shadow:5px 5px 5px var(--greenDark);
-}
-
-/* page des assos */
-#page-asso .info-asso{
-  background: var(--green);
-  color:var(--white);
-  border-radius:10px;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-#page-asso .info-asso, #page-asso .description-asso{
-  padding:20px;
-}
-#page-asso .info-asso p, #page-asso .description-asso p{
-  padding-top:20px;
-}
-#page-asso h3{
-  text-decoration:underline;
-  text-transform:uppercase;
-}
-#page-asso .images-asso{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#page-asso .images-asso .images-asso-alone{
-  width:50%;
 }
 
 /* ================ CSS FOOTER =============== */
@@ -407,9 +489,7 @@ footer img{
   color: #f2f2f2;
 }
 
-
-
-/* ================ CSS MEDIA ================ */
+/* ===================================================== CSS MEDIA ============================================= */
 
 @media screen and (min-width: 640px) {
   /* ========== HEADER ========= */
@@ -454,10 +534,81 @@ footer img{
     border-bottom: 4px solid #ffffff;
     padding: 6px 0; 
   }
+  
+  /*=============== ASSOCIATIONS =================*/
+  #associations .group-asso, #actions .group-action{
+    flex-direction: row !important;
+  }
+  #associations .flex-container, #actions .flex_container{
+    max-width: 350px !important;
+  }
+  #association .info-asso, #association .description-asso, #actions .info, #actions .de{
+    padding:40px;
+  }
+  #associations img, #actions img{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    margin:0px;
+    max-width: 350px !important;
+  }
+ 
+  /*=============== PAGES ASSOCIATIONS =================*/
+  #page-asso .images-asso{
+    flex-direction: row;
+  }
+  #page-asso .images-asso .images-asso-alone{
+    width:30%;
+  }
+  #page-asso{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows:  auto auto auto auto;
+    grid-template-areas:
+      "title title"
+      "description logo"
+      "information information"
+      "images images"
+    ;
+  }
+  #page-asso .images-asso{
+    flex-direction: row;
+  }
+  #page-asso .images-asso .images-asso-alone{
+    width:20%;
+    margin:20px;
+  }
+  #page-asso .info-asso, #page-asso .description-asso{
+    padding:40px;
+  }
 
+  /*=============== GESTION DES DECHETS=================*/
+  .conseil {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .conseil h3, .collecte h3{
+    width: 100%;
+  }
+  .conseil p{
+    width: 50%;
+  }
+    
+  .map {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around; 
+  }
+
+  .map iframe{
+    width: 400px;
+    height: 300px;
+  }
+  
 
   /*========== CONTACT ===============*/
-    .label{
+  .label{
     display: inline-block;
     width: 15%;
     margin-top: 6px;
@@ -472,14 +623,24 @@ footer img{
     margin: 20px auto;
     width: 30%;
     display: block;
-    cursor: pointer;       
-  } 
+    cursor: pointer;   
+    margin-top: 20px;    
+  }
+
   .container{
     margin: -10px;
   }
 
+  #contact{
+    padding-top: 90px !important;
+  }
 
- /*====================FOOTER ================*/
+  #contact h2{
+    margin-bottom: 40px;
+  }
+  
+
+  /*====================FOOTER ================*/
 
   footer img{
     opacity:0.6;
@@ -495,58 +656,6 @@ footer img{
   .footer_reseaux{
     order: 1;
   }
-  
 
-
-    /*================== ACTIONS================*/
-    #actions .group-action{
-      flex-direction: row !important;
-  }
-  #actions img{
-      width:100%;
-      height:auto;
-  }
-
-    /*=============== GESTION DES DECHETS=================*/
-    .conseil {
-        display: flex;
-        flex-direction: row ;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .conseil h3, .collecte h3{
-        width: 100%;
-    }
-    .conseil p{
-        width: 50%;
-    }
-     
-    .map {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-around; 
-    }
-
-    /*=============== ASSOCIATIONS =================*/
-    #associations .group-asso{
-        flex-direction: row !important;
-    }
-    #associations img{
-        width:100%;
-        height:auto;
-    }
-    #association .info-asso, #association .description-asso{
-      padding:40px;
-    }
-    #association img{
-      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-      margin:20px;
-    }
-    #page-asso .images-asso{
-      flex-direction: row;
-    }
-    #page-asso .images-asso .images-asso-alone{
-      width:30%;
-    }
+    
 }
