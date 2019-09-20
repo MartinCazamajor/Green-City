@@ -4,34 +4,31 @@
         <meta charset="utf-8">
         <title>Green-City</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     </head>
     <body>
 
         <!--     PARTIE HEADER & BANNER     -->
-        <header id="home">
-            <div class="menu">
-                <a href="./index.html"><span class="title"><img src="img/Logo GC.png"></span></a>
-                <input class="burger" type="checkbox">
-                <nav>
-                    <a href="#home">Accueil</a>
-                    <a href="#actions">Actions</a>
-                    <a href="#associations">Associations</i></a>
-                    <a href="#gestion">Gestion des dechets</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-
-                <div class="inline_menu">
-                    <a class="hover_style" href="#home">Accueil</a>
-                    <a class="hover_style" href="#actions">Actions</a>
-                    <a class="hover_style" href="#associations">Associations</i></a>
-                    <a class="hover_style" href="#gestion">Gestion des dechets</a>
-                    <a class="hover_style" href="#contact">Contact</a>
-                </div>
-
+        <header>
+            <a href="./index.html"><span class="logo"><img src="img/Logo GC.png"></span></a>
+            <ul class="nav">
+                <li class="navlink"><a class="hover_style" href="#home">Accueil</a></li>
+                <li class="navlink"><a class="hover_style" href="#actions">Actions</a></li>
+                <li class="navlink"><a class="hover_style" href="#associations">Associations</a></li>
+                <li class="navlink"><a class="hover_style" href="#gestion">Gestion des dechets</a></li>
+                <li class="navlink"><a class="hover_style" href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
             </div>
             <div class="banner">
-                <img src="./img/Banniere.png" alt="banner">
+                <ul id="slides">
+                    <li class="slide showing"><img src="./img/Banniere.png" alt="banner"></li>
+                    <li class="slide"><img src="./img/slide2.jpg" alt="banner"></li>
+                    <li class="slide"><img src="./img/slide3.jpg" alt="banner"></li>
+                </ul>
+                <button class="controls" id="pause">Pause</button>
             </div>
 
         </header>
@@ -170,6 +167,7 @@
             <div class="mentions">
                 <p>Green-City by <a href="https://wildcodeschool.fr">Wild Code School</a> | <a href="#">Mentions légales</a></a></p>
             </div>
-        </footer>         
+        </footer>    
+        <script src="script.js"></script>     
     </body>
 </html>
