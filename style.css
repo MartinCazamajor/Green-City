@@ -342,9 +342,9 @@ animation: bounce 2s infinite;
 
 /*Dimensionnement des images*/
   .poubelle {
-    height: 200px;
-    width: 200px;
-    border-radius: 10%;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom:10px;
 }
 
 /*classe gérant l'intégralité de la section gestion des déchets*/
@@ -379,19 +379,28 @@ animation: bounce 2s infinite;
   flex-direction: column;
   align-items: center;
 }
-.conseil p{
+.conseil-text{
   background:var(--grey);
   color:var(--green);
   border-radius:10px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-  padding:40px 20px;
+  padding:20px;
+  margin-top:10px;
+}
+.conseil-text ul, .texte ul{
+  list-style:none;}
+.conseil-text li, .texte li{
+  padding:10px;
 }
 .map {
-    margin: 15px;
+  margin: 20px;
 }
 .map iframe{
-  width: 250px;
-  height: 200px;
+  width: 100%;
+  height:400px;
+}
+.texte{
+  padding:20px;
 }
 
 /*------------------------------FIN SECTION GESTION DECHETS*/
@@ -590,20 +599,27 @@ footer img{
   .conseil h3, .collecte h3{
     width: 100%;
   }
-  .conseil p{
-    width: 50%;
+  .poubelle{
+    width:40%;
+    padding:10px;
   }
-    
+  .conseil-text{
+    width: 60%;
+  }
+   
   .map {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around; 
   }
-
+  .collecte .texte{
+    width:40%;
+    padding:20px;
+  }
   .map iframe{
-    width: 400px;
-    height: 300px;
+    width:60%;;
+    height:400px;
   }
   
 
