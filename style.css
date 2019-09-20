@@ -649,20 +649,31 @@ color: #f2f2f2;
 .conseil h3, .collecte h3{
   width: 100%;
 }
-.conseil p{
+.conseil .conseil-text{
   width: 50%;
 }
   
+.poubelle{
+  width:40%;
+  padding:10px;
+}
+.conseil-text{
+  width: 60%;
+}
+ 
 .map {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-around; 
 }
-
+.collecte .texte{
+  width:40%;
+  padding:20px;
+}
 .map iframe{
-  width: 700px;
-  height: 500px;
+  width:60%;;
+  height:400px;
 }
 
 
@@ -777,7 +788,8 @@ footer img:hover{
 /*=================== MAP ======================*/
   .map {
   margin: 15px;
-}
-.map iframe{
-width: 70%
+  }
+  .map iframe{
+  width: 70%
+  }
 }
