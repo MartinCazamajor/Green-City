@@ -1,0 +1,94 @@
+.container {
+
+    display:grid;
+    grid-template: 400px 200px / 200px 200px 200px;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    border-style : solid;
+
+
+}
+
+.waste {
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-color : black;
+    border-style : solid;
+    border-radius :50px;
+    margin:5px;
+
+
+
+}
+
+.core {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: gray;
+
+}
+
+.greenBin {
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: green;
+    border-style : solid;
+    border-radius :30px;
+    border-color:black;
+    margin : 5px;
+}
+
+.greenBin:hover {
+    margin : 1px;
+    background-color: darkgreen;
+}
+
+.blueBin {
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: blue;
+    border-style : solid;
+    border-radius :30px;
+    border-color:black;
+    margin : 5px;
+
+
+}
+
+.blueBin:hover {
+    margin : 1px;
+    background-color: darkblue;
+}
+
+.yellowBin {
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: yellow;
+    border-style : solid;
+    border-radius :30px;
+    border-color:black;
+    margin : 5px;
+
+
+}
+
+.yellowBin:hover {
+    margin : 1px;
+    background-color: darkgoldenrod;
+}
