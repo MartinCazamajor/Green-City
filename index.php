@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="fr">
     <head>
         <meta charset="utf-8">
@@ -11,7 +10,7 @@
         <!--     PARTIE HEADER & BANNER     -->
         <header id="home">
             <div class="menu">
-                <a href="./index.html"><span class="title"><img src="img/Logo GC.png"></span></a>
+                <a href="./index.php"><span class="title"><img src="img/Logo GC.png"></span></a>
                 <input class="burger" type="checkbox">
                 <nav>
                     <a href="#home">Accueil</a>
@@ -141,7 +140,7 @@
                 </div>
             </article>
             <div class = "jeu">
-                <a href="game.php?bin="><img id="boutonJeu" src="img/btn-red.jpg"/></a>
+                <a href="game_page.php?bin=&amp;dechet=organique"><img id="boutonJeu" src="img/btn-red.jpg"/></a>
             </div>
         </section>
 
