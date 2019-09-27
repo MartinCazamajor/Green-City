@@ -1,6 +1,5 @@
 <?php
 require 'game.php';
-
 ?>
 
 <html lang="en">
