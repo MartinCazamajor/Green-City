@@ -1,39 +1,35 @@
 .container {
     padding-top:100px; /*IMPORTANT pour que la navbar ne mange pas l'image dès le chargement*/
-    display:grid;
-    grid-template: 400px 200px / 200px 200px 200px;
-    justify-content: center;
     text-align: center;
-    font-size: 20px;
-    border-style : solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .waste {
-
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    border-color : black;
-    border-style : solid;
-    border-radius :50px;
     margin:5px;
+    color: black;
+    width: 500px;
 }
 
-.core {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    background-color: gray;
+.waste img{
+    height: 300px;
+    width: auto;
+    padding:10px;
 }
 
-.greenBin {
+.bins {
+    padding-top: 50px;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
 
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 2;
+.bin {
+    padding: 70px;
+}
+
+.green {
     background-color: green;
     border-style : solid;
     border-radius :30px;
@@ -41,17 +37,12 @@
     margin : 5px;
 }
 
-.greenBin:hover {
+.green:hover {
     margin : 1px;
     background-color: darkgreen;
 }
 
-.blueBin {
-
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3;
+.blue {
     background-color: blue;
     border-style : solid;
     border-radius :30px;
@@ -59,25 +50,36 @@
     margin : 5px;
 }
 
-.blueBin:hover {
+.blue:hover {
     margin : 1px;
     background-color: darkblue;
 }
 
-.yellowBin {
-
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
+.yellow {
     background-color: yellow;
-    border-style : solid;
+    border: black solid;
     border-radius :30px;
-    border-color:black;
     margin : 5px;
 }
 
-.yellowBin:hover {
+.yellow:hover {
     margin : 1px;
     background-color: darkgoldenrod;
+}
+
+.reset{
+    margin: 20px;
+}
+
+.press {
+    color : black;
+    background-color: lightgreen;
+    border: black solid 1px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.press:hover {
+    margin: 1px;
+    background-color: #3fa46a;
 }

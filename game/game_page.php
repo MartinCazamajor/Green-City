@@ -8,7 +8,7 @@ require 'game.php';
         <meta charset="UTF-8">
         <title>Jeu du tri</title>
         <link rel="stylesheet" type="text/css" href="game.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     </head>
     <body>
@@ -36,13 +36,22 @@ require 'game.php';
             </div>
         </header>
 
-        <div class="container" id="container">
-            <div class="waste" id="waste"> <img src="<?php echo $dechets[$dechet][0]; ?>" alt="il devrait y avoir un truc ici"> </div>
-            <div class="score" id="score"></div>
-            <a class="greenBin" href="?bin=green&amp;dechet=<?php echo $_GET["dechet"]; ?>"></a>
-            <a class="blueBin" href="?bin=blue&amp;dechet=<?php echo $_GET["dechet"]; ?>"></a>
-            <a class="yellowBin" href="?bin=yellow&amp;dechet=<?php echo $_GET["dechet"]; ?>"></a>
-            <a class="reset" href="?bin=&amp;dechet=<?php echo array_rand($dechets,1); ?>">RESET</a>
-        </div>
+        <article class="container">
+
+            <div class="waste">
+                <p><?php echo game($playerBin, $dechet) ?></p>
+                <img src="<?php echo "../img/".$dechets[$dechet][$_GET["rand"]]; ?>" alt="il devrait y avoir un truc ici">
+            </div>
+
+            <div class="bins">
+                <a class="green bin" href="?bin=green&amp;dechet=<?php echo $_GET["dechet"]; ?>&amp;rand=<?php echo $_GET["rand"] ?>"></a>
+                <a class="blue bin" href="?bin=blue&amp;dechet=<?php echo $_GET["dechet"]; ?>&amp;rand=<?php echo $_GET["rand"] ?>"></a>
+                <a class="yellow bin" href="?bin=yellow&amp;dechet=<?php echo $_GET["dechet"]; ?>&amp;rand=<?php echo $_GET["rand"] ?>"></a>
+            </div>
+
+            <div class="reset">
+                <a class="press" href="?bin=&amp;dechet=<?php echo array_rand($dechets,1); ?>&amp;rand=<?php echo rand(0,2) ?>">Rejouer ?</a>
+            </div>
+        </article>
     </body>
 </html>
