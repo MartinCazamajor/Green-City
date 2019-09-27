@@ -1,8 +1,20 @@
 <?php
 $dechets = [
-        "plastique"=>["plastique1.jpg","sac.jpg","food.jpg",],
-        "verre"=>["glass1.jpg","bocal.jpg","beer.jpg",],
-        "organique"=>["organique1.jpg","dupont.jpg","restes.jpg",]
+        "plastique"=>[
+            "plastique1.jpg",
+            "sac.jpg",
+            "food.jpg",
+            ],
+        "verre"=>[
+            "glass1.jpg",
+            "bocal.jpg",
+            "beer.jpg",
+            ],
+        "organique"=>[
+            "organique1.jpg",
+            "dupont.jpg",
+            "restes.jpg",
+            ],
         ];
 
 $playerBin = $_GET["bin"];
