@@ -443,6 +443,10 @@ margin-top: 6px;
 text-align: center;
 }
 
+.labelError{
+  color: red;
+}
+
 input[type=submit] {
 background-color: #6F6F6F;
 color: white;

@@ -1,3 +1,7 @@
+<?php
+require_once "form.php";
+?>
+
 <html lang="fr">
     <head>
         <meta charset="utf-8">
@@ -148,29 +152,29 @@
         <section id="contact">
             <h2>Contact</h2>
             <div class="container">
-                <form action="/action_page.php">
+                <form action="#contact" method="post">
                     <div class="ligne">
-                        <div class="label">
-                            <label for="fname">Nom</label>
+                        <div class="label <?= isset($nameError) ? "labelError" : ""; ?>">
+                            <label for="name"><?= isset($nameError) ? $nameError : "Nom"; ?></label>
                         </div>
                         <div class="formulaire">
-                            <input type="text" id="fname" name="firstname" placeholder="John Doe">
+                            <input type="text" id="name" name="name" placeholder="John Doe" value="<?= isset($nameError) ? null : $_POST["name"]; ?>">
                         </div>
                     </div>
                     <div class="ligne">
-                        <div class="label">
-                            <label for="lname">Email</label>
+                        <div class="label <?= isset($emailError) ? "labelError" : ""; ?>">
+                            <label for="email"><?= isset($emailError) ? $emailError : "Email"; ?></label>
                         </div>
                         <div class="formulaire">
-                            <input type="email" id="lname" name="lastname" placeholder="John.doe@gmail.com">
+                            <input type="email" id="email" name="email" placeholder="John.doe@gmail.com" value="<?= isset($emailError) ? null : $_POST["email"]; ?>">
                         </div>
-                    </div>            
+                    </div>
                     <div class="ligne">
-                        <div class="label">
-                            <label for="subject">Message</label>
+                        <div class="label <?= isset($subjectError) ? "labelError" : ""; ?>">
+                            <label for="subject"><?= isset($subjectError) ? $subjectError : "Message"; ?></label>
                         </div>
                         <div class="formulaire">
-                            <textarea id="subject" name="subject" placeholder="Bonjour..." style="height:200px"></textarea>
+                            <textarea id="subject" name="subject" placeholder="Bonjour..." style="height:200px"><?= isset($subjectError) ? null :$_POST["subject"]; ?></textarea>
                         </div>
                     </div>
                     <div class="ligne">
