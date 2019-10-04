@@ -179,6 +179,7 @@ require_once "form/form.php";
                     </div>
                     <div class="ligne">
                         <input type="submit" value="Envoyer">
+                        <a id="contactLink" href="form/contact.php">Clique ici pour gérer les contacts</a>
                     </div>
                 </form>
             </div>

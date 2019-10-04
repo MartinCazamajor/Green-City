@@ -447,7 +447,7 @@ text-align: center;
   color: red;
 }
 
-input[type=submit] {
+input[type=submit], #contactLink {
 background-color: #6F6F6F;
 color: white;
 padding: 12px 20px;
